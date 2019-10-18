@@ -1,5 +1,3 @@
-[TOC]
-
 # Defect Prevention and Extraction
 
 ---

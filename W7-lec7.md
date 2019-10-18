@@ -1,5 +1,3 @@
-[TOC]
-
 # Docker
 
 > The idea is built a specific environment for 1 application

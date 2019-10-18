@@ -1,5 +1,3 @@
-[TOC]
-
 # CI/CD - Continuous Integration and Dvelopment
 
 > **Benefits**:

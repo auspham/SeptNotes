@@ -1,5 +1,3 @@
-[TOC]
-
 # Design and the SOLID principle
 
 ## Design characteristic

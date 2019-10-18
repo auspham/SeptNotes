@@ -1,5 +1,3 @@
-[TOC]
-
 # Week 12 Revision
 
 ## Why Process and Tools

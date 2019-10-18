@@ -1,5 +1,3 @@
-[TOC]
-
 # Testing and Management
 
 ## Testing

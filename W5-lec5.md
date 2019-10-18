@@ -1,7 +1,3 @@
-
-
-[TOC]
-
 # Build Configurations
 
 ## Builds
