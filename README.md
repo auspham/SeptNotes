@@ -12,7 +12,7 @@ Notes left to complete:
 
 ## Contribution
 
-Please make a pull request on the repo [rockmanvnx6/SeptNotes](https://github.com/rockmanvnx6/SeptNotes) if you see any errors or would like to make some contribution.
+Please make a pull request on the repo [rockmanvnx6/SeptNotes](https://github.com/rockmanvnx6/SeptNotes) if you see any errors or would like to make some contributions.
 
 
 
