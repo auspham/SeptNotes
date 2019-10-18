@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SEPT Notes</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'SEPT Notes',
+      repo: 'rockmanvnx6/SeptNotes',
+      loadSidebar: true,
+      subMaxLevel: 4,
+      search: 'auto', // default
+
+      search : [
+        '/',
+        '/W1-lec1',
+        '/W2-lec2',
+        '/W4-lec5',
+        '/W4-lec6',
+        '/W5-lec5',
+        '/W6-lec6',
+        '/W7-lec7',
+        '/W8-lec6a',
+        '/W9-lec9',
+        '/W12-Revision'
+      ],
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: 'auto', // or 'auto'
+        placeholder: 'Type to search',
+
+        
+        noData: 'No Results!',
+
+        // Headline depth, 1 - 6
+        depth: 6,
+
+        hideOtherSidebarContent: true, // whether or not to hide other sidebar content
+      }
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+</body>
+</html>
