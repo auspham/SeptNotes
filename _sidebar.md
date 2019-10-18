@@ -7,5 +7,6 @@
 * [Week6-a](W6-lec6.md)
 * [Week7-a](W7-lec7.md)
 * [Week8-a](W8-lec6a.md)
-* [Week9-a](W9-lec9.md)
+* [Week9-a](W9-lec9a.md)
+* [Week9-b - WIP](W9-lec9b.md)
 * [Week12-a](W12-Revision.md)
