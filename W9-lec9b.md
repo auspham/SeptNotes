@@ -506,6 +506,11 @@ void processObject(CustomList objects) {
 
 ## Visitor Pattern
 
+This is a classical implementation of “double dispatch”
+
+- First method call is to the object, giving it the operation object…
+- … which recieves the second method call, giving the operation the type of object it is operating on
+
 **Intent**
 
 - Centralize operations on an object structure so that they can vary independently but still behave polymorphically
@@ -521,3 +526,69 @@ void processObject(CustomList objects) {
 - Class relationships of objects in the structure rarely change, but the operations on them change often.
 - Algorithms over the structure maintain state that’s updated during traversal
 
+> **Problem**:
+>
+> ![1571485848863](W9-lec9b.assets/1571485848863.png)
+>
+> For example, we want to implement the `draw()` differently based on classes. 
+>
+> This can be done using abstract method or instance of but it’s not scalable
+
+**Solution**: visitor
+
+![1571485922607](W9-lec9b.assets/1571485922607.png)
+
+The `ShapeVisitor` will decides what function to run based on the class.
+
+For example
+
+```java
+public interface ShapeVisitor {
+    public void visitCircle(Circle circle);
+    public void visitRectangle(Rectangle rectangle);
+    public void visitLine(Line line);
+}
+
+public class ShapePainter implements ShapeVisitor {
+    public void visitCircle(Circle circle) {
+        draw(circle);
+	}
+    public void visitRectangle(Rectangle rectangle) {
+        draw(rectangle);
+	}
+     public void visitLine(Line line) {
+        draw(line);
+	}
+}
+```
+
+```java
+public class Shape {
+    public abstract void accept(ShapeVisitor visitor);
+    public class Circle extends Shape {
+        public void accept(ShapeVisitor visitor) {
+            visitor.visitCircle(this);
+        }
+    }
+}
+```
+
+**Benefits**
+
+- Code is localized to operation
+- Compile error if a visit method is not implemented
+- Easy to define multiple visitors for different operations
+- Can accumulate operation’s state in visitor
+
+**Problems**
+
+- Lots of code
+- All visitor classes need an extra method whenever a new subclass of Shape is added
+- Return values?
+
+# Benefits of Design pattern
+
+1. Enable large scale reuse of software architectures. Also help document systems
+2. Patterns explicitly capture expert knowledge and design tradeoffs and make it more widely available
+3. Patterns help improve developer communication
+4. Pattern names form a common vocabulary
