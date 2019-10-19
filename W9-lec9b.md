@@ -178,6 +178,8 @@ subject.setState(10);
 
 ### Creational patterns
 
+> This is just a quick summary of what it does for review. For details go to [here](# 1. Creational Patterns).
+
 #### Singleton
 
 The entire class only has one instance, with a global point of access
@@ -233,4 +235,131 @@ Use sharing to support large numbers of fine-grained objects[^3] efficiently
 Provide a placeholder for another object to control access to it
 
 ### Behavioral Patterns
+
+#### Chain of Responsibility
+
+Avoid coupling the sender of a request  to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
+
+#### Command
+
+**Encapsulate a request as a object**, there by letting you parameterize clients with different requests, queue or log request, and support undoable operations.
+
+#### Interpreter
+
+Given a language, define a representation for its grammar along with an interpreter
+
+#### Interator
+
+Provide a way to access the elements of an aggregate object[^4] without exposing its underlying representation
+
+[^4]: Aggregate object is one which contains other object
+
+#### Mediator
+
+Define an object that encapsulates how a set of objects interact. Promotes **loose coupling** by keeping objects from referring to each other explicitly.
+
+#### Memento
+
+Without violating encapsulation, **capture** and externalize an **object’s internal state** so that the **object can be restored to this state later.**
+
+#### Observer
+
+Define a one-many dependency between objects so that one object changes state, all its dependants are notified
+
+#### State
+
+Allow an object to alter its behaviour when its internal state changes. The object will appear to change its class
+
+#### Strategy
+
+Define a family of algorithms, encapsulate each one, make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+
+#### Template Method
+
+Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
+
+#### Visitor
+
+Represent an operation to be performed on the elements of an object structure. Visitor lets you **define a new operation without changing the classes of the elements on which it operates.**
+
+# 1. Creational Patterns
+
+## Singleton
+
+> **Purpose**: 
+>
+> To ensure that a class only has one instance
+>
+> **Application**:
+>
+> It’s important for some classes to have only one instance (file system, window manager)
+>
+> It ensures that class only has one instance and the instance is easily accessible
+>
+> **Consequences:**
+>
+> <u>Pros</u>
+>
+> - Reduce namespace pollution
+> - Make it easy to change your mind and allow more than one instance
+> - Allow extension by subclassing
+>
+> <u>Cons</u>
+>
+> - Drawbacks on global if misused
+> - Implementation may be less efficient than a global
+> - Concurrency pitfalls
+>
+> **Implementation**
+>
+> - Lazy creation of object possible if large / inefficient
+
+Code Example:
+
+```java
+class Singleton {
+    private static Singleton uniqueInstance;
+    private Singleton() { }
+    public static Singleton getInstance() {
+        if(uniqueInstance == null) {
+            uniqueInstance = new Singleton();
+        }
+        return uniquerInstnace;
+    }
+}
+```
+
+
+
+## Factory
+
+> Factory is an object responsible for creating one or more objects for the client
+>
+> Factory provides the objects that meet interface but client doesn’t know concrete class of that object.
+>
+> Static factory method:
+>
+> - Coding technique
+> - Class-level method, returns an instance
+
+### Factory Method
+
+Factory method creates and returns an object of some concrete type that implements the interface
+
+The iterator pattern in Java provides a way to access the elements of a collection sequentially using the factory method `iterator()` (The caller does not need to specify the concrete type of the iterator)
+
+The type can be changed from platform to platform without affecting existing client code
+
+The factory method makes it unnecessary for clients to know all the creation details (classes, parameters)
+
+Example:
+
+- Suppose a company wants to check with the credit agency to determine the credit limit to be allowed for customers
+- It’s possible the credit agency may be offline at times.
+- In such cases, the credit limit is to determined using a series of questions in a dialog
+- To handle these cases, the `CreateCheckFactory` class will create either `CreateCheckOnline` or `CreateCheckOffline` objects both of which implement the method `creditLimit()`
+
+![1571467278218](W9-lec9b.assets/1571467278218.png)
+
+
 
