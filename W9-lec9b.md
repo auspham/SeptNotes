@@ -462,7 +462,7 @@ Example:
 
 ![1571476293929](W9-lec9b.assets/1571476293929.png)
 
-- Requires no knowledge of aggregate structure
+- **Requires no knowledge of** aggregate **structure**
   - Can use same interface to traverse linked list, array even tree
 - Can provide multiple iterators for the same aggregate
   - Iterator, ReverseIterator, FilterIterator,…
@@ -492,7 +492,32 @@ void processsObject(CustomList objects) {
 // or
 void processObject(CustomList objects) {
     Iterator it = objects.iterator();
-    while()
+    while(it.hasNext())
+        processObject(it.next())
 }
 ```
+
+> Iterator needs
+>
+> - Reference to aggregate
+> - Position within aggregate (e.g: index)
+>
+> Sometimes needs internal knowledge of aggregate
+
+## Visitor Pattern
+
+**Intent**
+
+- Centralize operations on an object structure so that they can vary independently but still behave polymorphically
+
+	
+	
+
+?> **Polymorphism** is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+
+**Applicability**
+
+- When classes define many unrelated operations
+- Class relationships of objects in the structure rarely change, but the operations on them change often.
+- Algorithms over the structure maintain state that’s updated during traversal
 
