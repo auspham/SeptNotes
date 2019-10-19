@@ -467,3 +467,32 @@ Example:
 - Can provide multiple iterators for the same aggregate
   - Iterator, ReverseIterator, FilterIterator,…
 
+Example:
+
+```java
+public class CustomList implements Iterable<Object> {
+    public Iterator<Object> iterator() {
+        return new CustomIterator(this);
+    }
+    public class CustomIterator implements Iterator<Object> {
+        public boolean hasNext() {...}
+        public Object next() { ... }
+        public void remove() { ... }
+    }
+}
+```
+
+Then
+
+```java
+void processsObject(CustomList objects) {
+    for (Object obj : objects)
+        processObject(obj)
+}
+// or
+void processObject(CustomList objects) {
+    Iterator it = objects.iterator();
+    while()
+}
+```
+
