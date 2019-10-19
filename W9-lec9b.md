@@ -419,3 +419,7 @@ Code Example:
 
 ![1571471314933](W9-lec9b.assets/1571471314933.png)
 
+**Consequences**
+
+- Shield clients from subsystem components - reducing the number of objects clients deal with
+- This allows 
