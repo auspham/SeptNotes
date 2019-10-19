@@ -1,7 +1,7 @@
 - Introduction
 
     - [Home](/)
-- SEPT Note
+- SEPT Notes
     - [Week1-a](W1-lec1.md)
     - [Week2-a](W2-lec2.md)
     - [Week4-a](W4-lec5.md)
