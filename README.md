@@ -1,5 +1,4 @@
 <center><img src="README.assets/www.rmit.edu.au"></center>
-
 # SEPT Notes
 
 > This is the summary of all the notes for Software Engineer Process and Tool contains all of the essential stuff for you to pass the exam
@@ -7,7 +6,7 @@
 ## Todo
 
 Notes left to complete:
-- [ ] Week 9
+- [x] Week 9
 - [ ] Week 10
 - [x] ~~Week 11 (not examinable)~~
 - [ ] Answer for Week 12
