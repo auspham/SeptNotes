@@ -178,7 +178,7 @@ subject.setState(10);
 
 ### Creational patterns
 
-!> This is just a quick summary of what it does for review. For details go to [here](# 1. Creational Patterns).
+!> This is just a quick summary of what it does for review. For details go to [here](#1.-Creational-Patterns).
 
 #### Singleton
 
@@ -455,4 +455,15 @@ Example:
 - Define class hierarchies consiting of primitive objects and composite objects. Complex objects can be created can recursively composing
 - Makes the client code simple as composite structures and primitives can be treated uniformly
 - Makes it easier to add new types of components - Clients need not to be changed
+
+# 3. Behavioural Patterns
+
+## Iterator Pattern
+
+![1571476293929](W9-lec9b.assets/1571476293929.png)
+
+- Requires no knowledge of aggregate structure
+  - Can use same interface to traverse linked list, array even tree
+- Can provide multiple iterators for the same aggregate
+  - Iterator, ReverseIterator, FilterIterator,…
 
