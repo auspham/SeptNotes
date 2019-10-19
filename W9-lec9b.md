@@ -178,57 +178,57 @@ subject.setState(10);
 
 ### Creational patterns
 
-##### Singleton
+#### Singleton
 
 The entire class only has one instance, with a global point of access
 
-##### Abstract factory
+#### Abstract factory
 
 Gives an `interface` for creating families of dependent objects
 
-##### Builder
+#### Builder
 
 **Separate the construction of a complex object from its representation** so that **the same construction can create different representations.**
 
-##### Factory Method
+#### Factory Method
 
 It defines an interface for creating an object. **but let subclasses decide which class to instantiate**
 
-##### Prototype
+#### Prototype
 
 Create a prototypical instance from an object, and create new object by copying this prototype.
 
 ### Structural Patterns
 
-##### Adapter
+#### Adapter
 
 Convert the **interface** of a class **into another interface** clients expected
 
-##### Bridge
+#### Bridge
 
 Decouple an abstraction from its implementation so that the two can vary independently
 
-##### Composite
+#### Composite
 
 Compose objects into tree structures to represent whole-part hierarchies. This patterns lets clients treat individual objects & object compositions[^2] uniformly.
 
 [^2]: Object composition is a way to combine objects or data types into more complex ones.
 
-##### Decorator
+#### Decorator
 
 Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
-##### Facade
+#### Facade
 
 Provide a unified interface to a set of interfaces in a subsystem. **Defines a higher-level interface that makes the subsystem easier to use.**
 
-##### Flyweight
+#### Flyweight
 
 Use sharing to support large numbers of fine-grained objects[^3] efficiently
 
 [^3]: More objects each holding less data
 
-##### Proxy
+#### Proxy
 
 Provide a placeholder for another object to control access to it
 
