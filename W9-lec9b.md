@@ -284,6 +284,9 @@ Represent an operation to be performed on the elements of an object structure. V
 
 # 1. Creational Patterns
 
+- Creational design process abstract the instantiation process - decouples the clients from the way objects are created composed and represented
+- Creational patterns gives flexibility in what get created, who creates it, how it is created and when it is created.
+
 ## Singleton
 
 > **Purpose**: 
@@ -357,9 +360,62 @@ Example:
 - Suppose a company wants to check with the credit agency to determine the credit limit to be allowed for customers
 - It’s possible the credit agency may be offline at times.
 - In such cases, the credit limit is to determined using a series of questions in a dialog
-- To handle these cases, the `CreateCheckFactory` class will create either `CreateCheckOnline` or `CreateCheckOffline` objects both of which implement the method `creditLimit()`
+- To handle these cases, the `CreateCheckFactory` class will create either `CreateCheckOnline` or `CreateCheckOffline` objects both of which implement the method `creditLimit()` depends on the situation.
 
 ![1571467278218](W9-lec9b.assets/1571467278218.png)
 
+> It always return the object of the right type
 
+### Abstract factory pattern
+
+**Problems:**
+
+Can we shield clients using different platforms from implementation details for various products
+
+
+
+**Solution**
+
+Represent each concept (menu, button,..) using `AbstractServices`. An `AbstractFactory` class declares methods for creating such services. A specific platform is then realized using `ConcreteFactory` and `ConcreateService` object
+
+![1571467691390](W9-lec9b.assets/1571467691390.png)
+
+> Create different classes based on client system. For example windows, OSX buttons
+
+
+
+**Consequence**
+
+- Helps to isolate concrete classes. Client manipulate instances through their abstract interfaces
+- It makes exchanging product families easy - as the concrete factory appears only once in an application
+- Promotes consistency products - product objects in a family are designed to work together.
+
+## 2. Structural patterns
+
+- Structural patterns are concerned with how classes and objects are composed to form larger structures
+- Structural  class patterns combined two or more classes. For example the class form of Adapter pattern derives a new class from two or more base classes.
+- Structural object patterns describe ways to compose objects to realize new functionalities.
+
+### Facade
+
+**Intent**
+
+- Provide a unified interface to a set of interfaces in subsystem
+
+**Motivation**
+
+- Structuring a system into subsystem helps reducing complexity
+- Aims to minimize the communication and dependencies between sub systems.
+
+![1571469583593](W9-lec9b.assets/1571469583593.png)
+
+**Applicability**
+
+- Subsystem tend to get more complex as they evolve. Thus facade will provide a simple default view of the system that is good enough for most client
+- The subsystem can be decoupled from clients thereby making them more portable
+- Allows additional layer to be created between clients and subsystems.
+
+Code Example:
+
+![1571471314933](W9-lec9b.assets/1571471314933.png)
 
