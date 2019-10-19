@@ -178,7 +178,7 @@ subject.setState(10);
 
 ### Creational patterns
 
-> This is just a quick summary of what it does for review. For details go to [here](# 1. Creational Patterns).
+!> This is just a quick summary of what it does for review. For details go to [here](# 1. Creational Patterns).
 
 #### Singleton
 
@@ -390,13 +390,14 @@ Represent each concept (menu, button,..) using `AbstractServices`. An `AbstractF
 - It makes exchanging product families easy - as the concrete factory appears only once in an application
 - Promotes consistency products - product objects in a family are designed to work together.
 
-## 2. Structural patterns
+# 2. Structural patterns
 
 - Structural patterns are concerned with how classes and objects are composed to form larger structures
 - Structural  class patterns combined two or more classes. For example the class form of Adapter pattern derives a new class from two or more base classes.
 - Structural object patterns describe ways to compose objects to realize new functionalities.
+- Composite is an example of structural object pattern. It allows one to compose primitive and other composite objects into arbitrarily complex structures.
 
-### Facade
+## Facade
 
 **Intent**
 
@@ -422,4 +423,36 @@ Code Example:
 **Consequences**
 
 - Shield clients from subsystem components - reducing the number of objects clients deal with
-- This allows 
+- This allows components of the subsystems to be changed without affecting the clients
+- Does not prevent clients using subsystem classes if they need to.
+
+
+
+## Composition pattern
+
+**Intent**
+
+Compose objects **into tree structures** to represent part-whole hierarchies
+
+Allows clients to treat individual objects and composition of objects uniformly
+
+**Motivation**
+
+Building complex objects can be made simpler if an abstract class can be used to represent both primitives and containers.
+
+![1571475016707](W9-lec9b.assets/1571475016707.png)
+
+
+
+Example:
+
+![1571475038914](W9-lec9b.assets/1571475038914.png)
+
+> All root from one object.
+
+**Consequences**
+
+- Define class hierarchies consiting of primitive objects and composite objects. Complex objects can be created can recursively composing
+- Makes the client code simple as composite structures and primitives can be treated uniformly
+- Makes it easier to add new types of components - Clients need not to be changed
+
