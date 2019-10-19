@@ -178,7 +178,7 @@ subject.setState(10);
 
 ### Creational patterns
 
-!> This is just a quick summary of what it does for review. For details go to [here](#1.-Creational-Patterns).
+!> This is just a quick summary of what it does for review. For details go to [here](#_1-creational-patterns).
 
 #### Singleton
 
