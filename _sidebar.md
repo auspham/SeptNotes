@@ -12,7 +12,9 @@
     - [Week8-a](W8-lec6a.md)
     - [Week9-a](W9-lec9a.md)
     - [Week9-b](W9-lec9b.md)
-    - [Week10-a](W10-lec10.md)
+    - [Week10-a](W10-lec10a.md)
+    - [Week10-b](W10-lec10b.md)
+
 
 - Revision / Summary
     - [Week12-a](W12-Revision.md)
