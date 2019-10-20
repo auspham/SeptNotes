@@ -11,14 +11,50 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
   <link rel="stylesheet" href="./styles.css" />
+  <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/css/themes/default.min.css" type="text/css" media="screen" charset="utf-8">
 
 </head>
 <body>
   <div id="app"></div>
+  <div class="note">
+    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clipboard" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-clipboard fa-w-12 fa-3x"><path fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z" class=""></path></svg>  
+    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="display-n svg-inline--fa fa-times fa-w-10 fa-9x"><path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z" class=""></path></svg>
+  </div>
+  <div class="edit-holder">
+    <div class="editable"></div>
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="trash-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="erase svg-inline--fa fa-trash-alt fa-w-14 fa-9x"><path fill="currentColor" d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z" class=""></path></svg>  
+    </div>
   <script>
+    let editor = new MediumEditor('.editable', {
+      placeholder: {
+        text: 'Remembered what you read? Now type it here.',
+        hideOnClick: true
+      }
+    });
+    const note = document.querySelector(".note");
+    const editHolder = document.querySelector(".edit-holder");
+    const clipBoard = document.querySelector(".fa-clipboard");
+    const faTimes = document.querySelector(".fa-times");
+    const erase = document.querySelector(".erase");
+    const editable = document.querySelector(".editable");
+
+    note.addEventListener("click", () => {
+      editHolder.classList.toggle("edit");
+      clipBoard.classList.toggle("display-n");
+      faTimes.classList.toggle("display-n");
+    }, false);
+
+    erase.addEventListener("click", () => {
+      while (editable.firstChild) {
+        editable.removeChild(editable.firstChild);
+      }
+    });
+
     window.$docsify = {
       themeColor: '#b53f3f',
-      disqus: 'SEPT Notes',
+      disqus: 'sept-notes',
       name: 'SEPT Notes',
       repo: 'rockmanvnx6/SeptNotes',
       loadSidebar: true,
@@ -28,6 +64,22 @@
       subMaxLevel: 4,
       search: 'auto', // default
       plugins: [
+        // function (hook,vm) {
+        //         hook.beforeEach(function (html) {
+        //             var md = window.markdownit({
+        //               html: true
+        //             });
+
+        //             md.use(window.markdownItAttrs, {
+        //                 // optional, these are default options
+        //                 leftDelimiter: '{',
+        //                 rightDelimiter: '}',
+        //                 allowedAttributes: []  // empty array = all attributes are allowed
+        //             }).use(window.markdownItFootnote)
+        //             .use(markdownItTaskList.default);
+        //             return md.render(html);
+        //         });
+        // },
         function(hook) {
           var footer = [
             '<div id="disqus_thread"></div>'
@@ -49,19 +101,7 @@
               html
             );
           });
-        },
-        // function (hook,vm) {
-        //         hook.beforeEach(function (html) {
-        //             var md = window.markdownit();
-        //             md.use(markdownItAttrs, {
-        //                 // optional, these are default options
-        //                 leftDelimiter: '{',
-        //                 rightDelimiter: '}',
-        //                 allowedAttributes: []  // empty array = all attributes are allowed
-        //             });
-        //             return md.render(html);
-        //         });
-        //     }
+        }
       ],
       search : [
         '/',
@@ -97,7 +137,6 @@
   <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script> -->
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script>
   <script>
@@ -121,8 +160,6 @@
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/10.0.0/markdown-it.min.js" integrity="sha256-YASERpEeN8gRNr/Fy4Km34WGFqIq1h6HkJMAQnVHlhk=" crossorigin="anonymous"></script>
-    <script src="https://wzrd.in/standalone/markdown-it-attrs@latest" charset="utf-8"></script> -->
+  
 </body>
 </html>

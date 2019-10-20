@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+
 :root {
     --theme-color: #e50914;
     --theme-color-dark: #b20710;
@@ -385,4 +387,74 @@
   .app-name-link:hover{
     /* color: var(--theme-color); */
     color: var(--theme-color);
+  }
+
+  .note {
+    position: fixed;
+    z-index: 9999999999;
+    bottom: 1em;
+    right: 1em;
+    background: white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 0 0 50px rgba(0,0,0,.2);
+    transition: all .2s ease;
+  }
+
+  .note:hover {
+    background: var(--theme-color);
+    cursor: pointer;
+    color: white;
+  }
+
+  .note svg{
+    width: 30px;
+    height: auto;
+  }
+
+  .editable {
+    padding: 5em;
+    width: 100%;
+    height: 100%;
+    font-family: 'PT Serif', serif;
+  }
+  .edit-holder{
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 999999999;
+    top: 0;
+    left: 0;
+    display: none;
+    position: fixed!important;
+  }
+
+  .edit-holder svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: lightgray;
+    margin: 3em;
+  }
+
+  .erase:hover {
+    cursor: pointer;
+  }
+
+  .edit {
+    display: block;
+  }
+
+  .display-n {
+    display:none;
+  }
+
+  .medium-editor-toolbar {
+    z-index: 999999999999999999999999!important;
   }
