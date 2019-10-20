@@ -102,7 +102,7 @@ Clients should not be forced to depend on method that they do not use
 
 High-level modules should not depend on low-level modules; both **should depend on abstractions**
 
-Abstractions should not depend on details, ==details should depend on abstractions==
+Abstractions should not depend on details, <mark>details should depend on abstractions</mark>
 
 ![1570151656057](W8-lec6a.assets/1570151656057.png).
 

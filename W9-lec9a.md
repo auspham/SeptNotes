@@ -1,6 +1,6 @@
 # Refactoring
 
-The process of changing a software system in such a way that ==does not alter external behaviour of the code== but improves its internal structure.
+The process of changing a software system in such a way that <mark>does not alter external behaviour of the code</mark> but improves its internal structure.
 
 A discipline to clean up code, a more effective designs.
 

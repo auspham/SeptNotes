@@ -71,7 +71,7 @@ A test case is designed to **test 1 aspect of the system**
 
 Useful when we haven’t built all the functionalities but needs an object for the example.
 
-What we can do is to make a mock object to ==mimic the functionality==
+What we can do is to make a mock object to <mark>mimic the functionality</mark>
 
 Examples:
 
@@ -116,7 +116,7 @@ public void testLoginDialogSuccess {
 
 ## Release Testing
 
-- Is the process of testing a particular ==release of a system== that is ==intended to use outside of the development team.==
+- Is the process of testing a particular <mark>release of a system</mark> that is <mark>intended to use outside of the development team.</mark>
 
   - The goal is to convince supplier of the system that is good enough to use.
 
