@@ -415,12 +415,14 @@
     width: 30px;
     height: auto;
   }
-
   .editable {
     width: 100%;
     height: 100%;
     font-family: 'PT Serif', serif;
     overflow: auto;
+  }
+  .noscroll {
+    overflow: hidden;
   }
 
   .editable:focus {
