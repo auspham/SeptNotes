@@ -122,7 +122,7 @@ Software process model is an abstract representation of a process. It presents a
 
 **Method applicability**
 
-Product development where a software company is developing a small or medium-sized product for sale
+Agile suits for developing a small or medium-sized product for sale
 
 Custom system development within an organization where there is a clear commitment from the customer to become involved in the development process and where there are not a lot of external rules and regulations that affect the software
 
