@@ -420,6 +420,7 @@
     height: 100%;
     font-family: 'PT Serif', serif;
     overflow: auto;
+    font-size: 1.5em;
   }
   .noscroll {
     overflow: hidden;
