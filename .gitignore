@@ -2,3 +2,5 @@ Meeting*.md
 Refactor*.md
 Acceptance*.md
 Report*.md
+.gitignore
+node_modules/

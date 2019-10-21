@@ -462,3 +462,8 @@
   .medium-editor-toolbar {
     z-index: 999999999999999999999999!important;
   }
+
+  blockquote {
+    border-left: 5px solid var(--theme-color);
+    padding-left: 1em;
+  }
