@@ -15,10 +15,6 @@
     color: var(--text-color-base);
   }
   
-  * {
-    text-decoration: none !important;
-  }
-  
   a {
     transition: all 0.3s linear;
   }
