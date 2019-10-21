@@ -98,6 +98,14 @@
           hook.afterEach(function(html) {
             return html + footer;
           });
+
+          hook.doneEach(function() {
+            let content = document.querySelector(".markdown-section");
+            
+            if(window.sq) {
+              sq.pageContent = content.innerText;
+            }
+          });
         },
         function(hook, vm) {
           hook.beforeEach(function(html) {
