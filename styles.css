@@ -550,3 +550,6 @@
             transform: none;
     margin: 15px auto 0;
   }
+  .reader-content {
+    display: none!important
+  }
