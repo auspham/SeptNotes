@@ -386,19 +386,16 @@
   }
 
   .note {
-    position: fixed;
-    z-index: 9999999999;
-    bottom: 1em;
-    right: 1em;
-    background: white;
-    width: 80px;
-    height: 80px;
+    z-index: 9999999999!important;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-items: center;
     border-radius: 100%;
-    box-shadow: 0 0 50px rgba(0,0,0,.2);
     transition: all .2s ease;
+    display: flex;
+    box-shadow: 0 0 50px rgba(0,0,0,.2);
+    background: white;
   }
 
   .note:hover {
@@ -410,6 +407,10 @@
   .note svg{
     width: 30px;
     height: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: relative;
   }
   .editable {
     width: 100%;
@@ -456,7 +457,7 @@
   }
 
   .display-n {
-    display:none;
+    display:none!important;
   }
 
   .medium-editor-toolbar {
@@ -466,4 +467,86 @@
   blockquote {
     border-left: 5px solid var(--theme-color);
     padding-left: 1em;
+  }
+
+  .sq-trans {
+    z-index: 9999;
+  }
+
+
+
+
+  .closeBtn {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    z-index: 9999999999!important;
+    bottom: 1em;
+    right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 0 0 50px rgba(0,0,0,.2);
+    transition: all .2s ease;
+    display: flex;
+  }
+
+  .closeBtn:hover {
+    background: var(--theme-color);
+    cursor: pointer;
+    color: white;
+  }
+
+  .closeBtn svg {
+    width: 30px;
+    height: auto;
+    position: relative;
+  }
+
+  .container {
+    bottom: 0;
+    position: fixed;
+    margin: 1em;
+    right: 0px;
+  }
+  
+  .buttons {
+    color: black;
+
+
+    border-radius: 50%;
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 20px auto 0;
+    position: relative;
+    -webkit-transition: all .1s ease-out;
+            transition: all .1s ease-out;  
+  }
+
+  .buttons:active, 
+  .buttons:focus, 
+  .buttons:hover {
+    cursor: pointer;
+  }
+  
+  .buttons:not(:last-child) {
+    width: 40px;
+    height: 40px;
+    margin: 20px auto 0;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  
+  .container:hover 
+  .buttons:not(:last-child) {
+    opacity: 1;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    margin: 15px auto 0;
   }
