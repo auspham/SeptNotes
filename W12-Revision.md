@@ -268,7 +268,7 @@
     <details>
     <summary>Show answer</summary>
 
-        Git clone:
+        git clone:
             - To clone an existing project
             - git clone <url>
         git commit:
@@ -327,14 +327,39 @@
     </details>
 
 - You should understand how to perform these and some basic “good practice” 
+    <details>
+    <summary>Show answer</summary>
+
+        Well, based on the assignment, you should understand.
+    </details>
 
 - You should understand some issues that might arise and how to resolve them (e.g., conflicts) 
+    <details>
+    <summary>Show answer</summary>
+
+        Git conflicts happens when there is a conflict on the content. To resolve simply remove the git conflig annotation. Some tools allow you to click and select.
+    </details>
 
 - When/how often should you commit/merge/push etc? 
+    <details>
+    <summary>Show answer</summary>
+
+        Commit,push on features, merge on update
+    </details>
 
 - What are good practice workflows, e.g., branch-per-feature, Gitflow? 
+    <details>
+    <summary>Show answer</summary>
 
-  What are their benefits? How do they support CI/CD 
+        Master, dev_branch, hot_fix, features, sub_features, deployment
+    </details>
+
+- What are their benefits? How do they support CI/CD 
+    <details>
+    <summary>Show answer</summary>
+
+        Deployment might have some specific configuration on branching. Pushing and commiting, making a pull request will activate CI/CD that makes it continuously check for bugs.
+    </details>
 
 
 
