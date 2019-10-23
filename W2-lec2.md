@@ -4,7 +4,7 @@
 
 **Framework for delivering products quickly and efficiently**
 
-It encompasses set of exciting new practices and techniques that make product devlopment more iterative.
+It encompasses set of exciting new practices and techniques that make product development more iterative.
 
 Relies on lean governance (management) as opposed to more traditional techniques that rely on heavyweight governance
 
