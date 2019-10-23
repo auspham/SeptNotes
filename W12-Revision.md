@@ -247,7 +247,6 @@
             - Rquires administrator(s) to manage permissions
             - Very large repository.
 
-
         In Distributed repository:
             - Everyone has a local sandbox.
             - Works offline
@@ -257,17 +256,79 @@
             - Less management
             Some tools:
                 - Git
-
-
+                - Mercurial
+            Advantage over centralised:
+                - Offline commit (Faster)
+                - Easier to merge
 
     </details>
   
 
-- What are the main operations in Git and how do they work, esp. clone, commit, merge, push/pull, tag, but also rebase. roll-back? 
+- What are the main operations in Git and how do they work, esp. clone, commit, merge, push/pull, tag, but also rebase. roll-back?
+    <details>
+    <summary>Show answer</summary>
 
-  – You should understand how to perform these and some basic “good practice” 
+        Git clone:
+            - To clone an existing project
+            - git clone <url>
+        git commit:
+            - To commit a change.
+            - Have to do after git add
+            - git commit --m "change"
+        git push:
+            - after commit, you want to push to your branch
+            - git push origin your_branch
+        git pull:
+            - if your remote branch is up-to-date, you want to update your local branch as well
+            - git fetch origin your_branch
+            - git pull origin your_branch
+        git merge:
+            - To merge with another branch
+            - First you have to checkout to the branch that you want to merge to.
+            - And then merge with the branch that you want to merge from.
+            - git checkout main_branch
+            - git merge sub_branch
+        git tag:
+            - You can tag the current branch wth some version.
+            - git tag <tagname>
+            - This will create a local tag, then you need to push with the tag
+            - git push origin --tags
+            - To list all tag, we use:
+            - git tag
+        git rebase:
+            - normally, git merge will look something like this:
+              *-*-*-*-*-*-*-*
+                     \*-*-*/
+            - Rebase will merge them into the same line: *-*...*-*
+            - Git rebase is used when you want to update a branch according to the other
 
-  – You should understand some issues that might arise and how to resolve them (e.g., conflicts) 
+            How to use?
+            - For example, I'm developing on feature branch, some one just updated my dev branch.
+            - Now I need to update my feature branch according to the new dev branch
+            - First, let's pull the latest changes on dev_branch
+              - git checkout dev_branch
+              - git pull origin dev_branch
+            - Okay, now my dev branch is up to date, now i need to update my feature branch according to it.
+              - git checkout feature_branch
+              - git rebase dev_branch
+            - Done, my feature branch is updated according to the dev_branch
+
+            - Now, If I finished the feature branch already and want to merge into dev_branch, how would I do?
+              - git checkout dev_branch
+              - git rebase feature_branch
+            - Done!
+
+            - Demo: https://www.youtube.com/watch?v=f1wnYdLEpgI&t=135s
+        git rollback(revert)
+            - First you want to check the log to know which state to revert to
+              - git reflog
+              - git revert <hash>
+
+    </details>
+
+- You should understand how to perform these and some basic “good practice” 
+
+- You should understand some issues that might arise and how to resolve them (e.g., conflicts) 
 
 - When/how often should you commit/merge/push etc? 
 
