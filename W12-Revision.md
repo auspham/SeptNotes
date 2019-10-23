@@ -162,7 +162,7 @@
 	</details>
 
 
-## Topic2: User stories and backlogs
+## Topic 2: User stories and backlogs
 
 - User Stories: how are they different to Use Cases? How do they fit with agile development? How do they reduce risk associated with requirements change?
   
@@ -218,9 +218,50 @@
 ## Topic 3: Version control, Git, Gitflow 
 
 - Why is version control critical (multiple reasons!)? What is version control’s role in modern SE process? 
-  
+    <details>
+    <summary>Show answer</summary>
+
+        Version controls support developers to:
+        - Sharing files between team members
+        - Work on the same files at the same time
+        - Keep track of what other people are changing
+        - Keep log of what changed and why.
+        - Work on multiple versions at once
+        - Control and manage release.
+       
+        In SE process, version controls can act as the help for releases.
+
+    </details>
 
 - What is the difference between centralized and distributed Version Systems? What are some advantages of the Distributed model? 
+    <details>
+    <summary>Show answer</summary>
+
+        In centralised repository:
+            - all the clients sharing the same repository.
+            Some tools:
+                - Concurrent Versioning System (CVS)
+                - Subversion (SVN)
+
+            - Network connection is always required to make repository changes.
+            - Rquires administrator(s) to manage permissions
+            - Very large repository.
+
+
+        In Distributed repository:
+            - Everyone has a local sandbox.
+            - Works offline
+            - Fast
+            - Handles changes well
+            - Branching and merging is easy
+            - Less management
+            Some tools:
+                - Git
+
+
+
+    </details>
+  
 
 - What are the main operations in Git and how do they work, esp. clone, commit, merge, push/pull, tag, but also rebase. roll-back? 
 

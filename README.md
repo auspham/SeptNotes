@@ -1,7 +1,10 @@
 <center><img src="README.assets/www.rmit.edu.au"></center>
+
 # SEPT Notes
 
 > This is the summary of all the notes for Software Engineer Process and Tool contains all of the essential stuff for you to pass the exam
+
+!> The note is missing **User Stories and backlogs** and **Version control, Git, Gitflow.** Any helps on contributing these notes would be appreciated.
 
 ## Todo
 
