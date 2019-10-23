@@ -4,7 +4,7 @@
 
 - What are some of the characteristics of modern software construction.
 
-  - 
+  - Shorter iteration cycles
 
 - How does Process help:
 
@@ -23,26 +23,161 @@
 ## Topic 1: SE Processes, Agile
 
 - Why is good SE Process so critical? What does good process manage, reduce, maximise? Explain the Quality Triangle. 
+
+	<details>
+	<summary>Show answer</summary>
+
+        SE process is critical because it can:
+        1. Reduce risks
+        2. Mage complexity
+        3. Maximise quality
+
+        Quality triangle: 
+        - Increase in one will leads to changes to the others.
+	</details>
+
 - What are the main parts of the SE life cycle? What are the main activities in SE? 
+
+	<details>
+	<summary>Show answer</summary>
+
+        SE Life cycles:
+        1. Requirement gathering
+        2. Requirement analysis
+        3. Design
+        4. Implementation
+        5. Deployment
+        6. Management
+
+	</details>
 
 - What are the main SE Processes? Their advantages and disadvantages? 
 
+	<details>
+	<summary>Show answer</summary>
+
+        Some of the main process model:
+        1. Waterfall (Incremental):
+            - Advantage:
+                - Easy to follow for new person
+                - Suits for large system, plan driven
+            - Disadvantage:
+                - Hard to change while developing
+                - Inflexible and taking 
+        2. Agile (Incremental & Iterative):
+            - Advantage:
+                - Customer involvement
+                - Incremental Delivery
+                - Focus on customer
+                - Adapt change
+                - Simplicity
+            - Disadvantage:
+                - Hard to scale
+
+	</details>
+
 - What are the characteristics of Incremental and Agile methods? How does Agile address the problems of the traditional Waterfall approach? What are its strengths? 
 
-- How does Scrum work? What are its benefits? How do the task-tracking tools like Trello and JIRA support it? How would you organise a Trello/JIRA board to manage Scrum? 
-- How are the Scrum team roles and what do they do? Who fills them? 
-- What are the different Scrum meetings and their purpose? 
+	<details>
+	<summary>Show answer</summary>
 
+        Incremental:
+         - Reduce the cost of accomodating customer requirements is reduced
+         - Easier to get customer feedback on the development work that has been done.
+         However incremental has some problem:
+           - Process is not visible
+           - System structure tends to degrade as new increments added
+
+        Agile:
+         - Rapid development and delivery which suits for the businesses
+         - Focus on code rather than design
+         - Deliver working software quickly
+         - Reduce overheads documentation 
+	</details>
+
+- How does Scrum work? What are its benefits? How do the task-tracking tools like Trello and JIRA support it? How would you organise a Trello/JIRA board to manage Scrum? 
+    
+    <details>
+	<summary>Show answer</summary>
+
+        Scrum is an Agile's framework (besides scrum there is XP programming)
+        but it focus more on the actual iterative development:
+        
+        Steps to scrum:
+        1. Initial phase - outline planning phase
+        2. Sprint cycles - where each develops an increment of system
+            1. Write user stories
+            2. Prepare product backlog
+            3. Sprint (Daily Scrum meeting)
+            4. Sprint review & retro
+        3. Project closure phase wraps up the project.
+
+        With the helps of tools like Trello and JIRA, it can acts as a Task Board
+        For the Team member to quickly review what is doing/done and need to be reviewed.
+
+        You would normally organise your Trello with:
+         - Product backlog 
+         - Sprint Planning 
+         - Sprint Backlog 
+         - In Progress
+         - Under review
+         - Done
+
+	</details>
+
+- How are the Scrum team roles and what do they do? Who fills them? 
+    <details>
+	<summary>Show answer</summary>
+
+        1. Scrum Master
+        2. Product Owner
+        3. Team Members.
+
+	</details>
+
+- What are the different Scrum meetings and their purpose? 
+    <details>
+	<summary>Show answer</summary>
+
+        1. Daily Standup meeting
+            - Review what each member has done for the previous sprint
+            - What will each member do for the next sprint
+            - Any difficulties
+            - Normally happens 15 mins.
+        2. Sprint Planning
+            - What works to do for the next sprint
+            - Prepare sprint backlog.
+            - Identify how much works to be done for the current sprint
+            - Normally every 7-30 days
+        3. Sprint review meeting
+            - After the sprint execution
+            - Should have a live demo
+            - Product owners reviews commitments made at the Sprint Planning Meeting
+            - Declare which items is done
+        4. Retrospective meeting
+            - The team inspect their behaviour
+            - What went well/ bad
+            - What they learn.
+
+	</details>
 
 
 ## Topic2: User stories and backlogs
 
-- User Stories: how are they different to Use Cases? How do they fit with agile development? How do they reduce risk associated with requirements change? 
+- User Stories: how are they different to Use Cases? How do they fit with agile development? How do they reduce risk associated with requirements change?
+  
+    <details>
+    <summary>Show answer</summary>        
+    
+        Use cases: are more for how the system would operate
+        User stories: are for how the users would interact with the system.
+        
+        User stories can reduce risks of requirements changes because it reflects how the users will interact with the system.
+    </details>
+ 
 - What are the main parts of a User Story? What does a User Story look like? How are User Stories used? What are characteristics of a good User Story? 
 - How are task times/sizes estimated? What is the relationship between User Stories and Backlogs? 
 - What is a Definition of Done? What are different possible definitions? 
-
-
 
 ## Topic 3: Version control, Git, Gitflow 
 

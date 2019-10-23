@@ -18,9 +18,9 @@
 
 **How does process help?**
 
-- Reduce risk of failure
-- failure is quick
-- Feedback is recieved quickly, and solutions can be provided based on changing requirements and needs of the clients
+1. Reduce risks
+2. Mage complexity
+3. Maximise quality
 
 
 
