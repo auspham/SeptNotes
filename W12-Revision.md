@@ -176,12 +176,49 @@
     </details>
  
 - What are the main parts of a User Story? What does a User Story look like? How are User Stories used? What are characteristics of a good User Story? 
+
+    <details>
+    <summary>Show answer</summary>        
+    
+        Main part:
+        - Who is the user?
+        - What is the goal?
+        - What are the reasons?
+
+        As a [user] I want to [goal] so I can [reason].
+
+        User stories are used to determine the functionalities of the program.
+
+        Characteristic
+        - Independent
+        - Negotiable
+        - Valuable
+        - Estimable
+        - Small
+        - Testable
+
+    </details>
+
 - How are task times/sizes estimated? What is the relationship between User Stories and Backlogs? 
+    <details>
+    <summary>Show answer</summary>
+
+        User stories are used in Sprint Planning, in order to make relevant product backlog.
+        
+        From user stories we can extract to todo items with story points.
+    </details>
+
 - What is a Definition of Done? What are different possible definitions? 
+    <details>
+    <summary>Show answer</summary>
+    
+        Definition of done may vary. But normally it's when the product is shippable.
+    </details>
 
 ## Topic 3: Version control, Git, Gitflow 
 
 - Why is version control critical (multiple reasons!)? What is version control’s role in modern SE process? 
+  
 
 - What is the difference between centralized and distributed Version Systems? What are some advantages of the Distributed model? 
 
