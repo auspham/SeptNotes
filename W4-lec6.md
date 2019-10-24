@@ -31,7 +31,7 @@ Low to high:
 ## Test Planning
 
 - Have to make surre that all aspects of the software are tested.
-- 1 Features - 1 to many test casse, to exercise the feature thoroughly.
+- 1 Features - 1 to many test cases, to exercise the feature thoroughly.
 - Must specified into either `pass` or `fail`
   - **Start** from a `known state` / configuration
   - Clearly **specify the steps** to perform a test
