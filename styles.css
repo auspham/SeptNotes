@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
-
+@font-face {
+  font-family: 'sansforgetica-regular';
+  src: url('./assets/SansForgetica-Regular.woff2') format('woff2'), url('./assets/SansForgetica-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
     --theme-color: #e50914;
     --theme-color-dark: #b20710;
@@ -415,7 +420,7 @@
   .editable {
     width: 100%;
     height: 100%;
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif', serif!important;
     overflow: auto;
     font-size: 1.5em;
   }
