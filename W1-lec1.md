@@ -19,7 +19,7 @@
 **How does process help?**
 
 1. Reduce risks
-2. Mage complexity
+2. Manage complexity
 3. Maximise quality
 
 
@@ -28,6 +28,7 @@
 
 - Automation: reduce human error
 - Collaboration
+- Project organisation and management
 
 
 
