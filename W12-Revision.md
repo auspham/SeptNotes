@@ -46,8 +46,9 @@
         2. Requirement analysis
         3. Design
         4. Implementation
-        5. Deployment
-        6. Management
+	5. Testing
+        6. Deployment
+        7. Management
 
 	</details>
 
