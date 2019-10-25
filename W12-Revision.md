@@ -367,26 +367,156 @@
 ## Topic 4: Unit Testing, Logging
 
 - What is Test Driven Development? What are its benefits? 
+    <details>
+    <summary>Show answer</summary>
+
+            Test Drivin Development is when you write all the test at the first of the development. And then write production code to pass the test.
+
+            Benefits:
+            1. Increase the confident of the code quality
+            2. Helps the programmer understand the features better
+            3. Make it easier to understand requirement
+            4. Code maintenance
+            5. Facilitate refactoring
+            6. Create a low-level regression test
+            7. Find bugs early.
+    </details>
+
 - What are Mock Objects and what are they used for (multiple reasons)? 
+    <details>
+    <summary>Show answer</summary>
+
+            Mock object is to mimic the functionality of an actual object. It's used when: 
+            - The real object is too hard to create
+            - Real object is slow
+            - Real object does not exist
+    </details>
+
 - What are Java Assertions and what are they used for? 
+    <details>
+    <summary>Show answer</summary>
+
+            Java assertions is to assert what you believed to be true. What state you think your program should be.
+    </details>
 - Be prepared to design and write JUnit tests for a simple short program, using @BeforeClass, @Before, etc, testing for Exceptions, etc 
+    <details>
+    <summary>Show answer</summary>
+
+            Review example in lecture 4.
+    </details>
 - What is Logging useful for? What sort of information should be logged? What are the basics for using the Java Loggger? In particular, how are Levels used? 
+    <details>
+    <summary>Show answer</summary>
+
+        Logger has more features to log including specific information such as timestamps.
+        Moreover, with logging you can choose to store in a file - as a way to keep records.
+        The information you should log normally hard to debug, or just for some quick preview.
+
+        For basic use, see lecture 4-a
+
+        Some of the levels: (from worst to okay)
+        - SEVERE
+        - WARNING
+        - INFO
+        - FINE
+        - FINER
+        - FINEST
+
+    </details>
 
 
 
 ## Topic 5: Testing and Test/Issue Management 
 
 - What is testing for? How is early testing important? 
+    <details>
+    <summary>Show answer</summary>
 
-- What are the different stages of testing and what are the inputs to them? 
+        Testing is to verify that the program operate as required or not. 
+        Discover aspects that has not met the requirment
 
-  – What is Regression testing and why is it important? 
+        NOTE: Testing can't prove that there won't be any more bugs. It only can prove that there are bugs!!!
+
+        Early testing is important because we can find bug easier. Thus minimize the cost of fixing.
+        
+        Cost of fixing:
+        - Design: 1x
+        - Implementation: 6.5x
+        - Testing: 10x
+        - Maintenance: 100x
+    </details>
+
+- What are the different stages of testing and what are the inputs to them? What is Regression testing and why is it important? 
+  
+    <details>
+    <summary>Show answer</summary>
+
+        We have to make sure that all aspect of the program is tested (1 features - 1 to many tests).
+        - First, we need to setup a testing environment / configuration
+        - Specify the step to perform the test
+        - Categorise the result into pass/fail. (pass for expected result)
+
+        In requirement stage, we plan acceptance test.
+        In specification stage, we plan system test
+        In design stage, we plan integration test
+        In coding stage, we plan unit test
+
+        Regression Testing:
+        - All of the tests case that you built are then re-executed to make sure that the existing functionalities work as expected.
+    </details>
 
 - What goes into a Test Case description? How/when are users engaged in testing? What are good features of a test case? You should be prepared to design some small number of test cases for a simple application. 
+    <details>
+    <summary>Show answer</summary>
+
+        - For Managing the test case: at minimum you should include the date-time for the test, the functionality that you tested, and the result weather it's pass or fail.
+      
+        - For the test case itself: Should be retrieved from user-story. Might include functional requirement as to identify different input values. Must includes all of the steps to test.
+
+        - User engaged in testing in User Testing including Alpha, Beta, Acceptance test.
+
+    </details>
 
 - Why is issue tracking important? What are the different uses for a good bug report? What are the characteristics of a good bug report? You may be required to critique a bug report. 
+  
+    <details>
+    <summary>Show answer</summary>
+
+        Issue tracking acts as a todo list, to track the problems and issues in the software.
+        - It acts as a communication tool between QA - Developer, user-developers
+        - Keep track of the workflow and assign tasks to people.
+
+        A good bug report needs to include:
+        - Reporter
+        - Product / version
+        - Severity
+        - Priority / Urgency
+        - Reproducibility
+        - Likelihood
+        - Steps to Reproduce
+        - Crash report/ logs / screenshots / attached files.
+    </details>
 
 - What are the different states/stages a bug goes through? How are bugs ranked? How are Severity and Priority measured? 
+    <details>
+    <summary>Show answer</summary>
+
+        Open:
+            - New: When the reporter created a new issue
+            - Accepted: When the bug report is in good format
+            - Need more information (NMI): Need more information
+            - In Progress: The developer is working on it.
+
+        Close: 
+            - Invalid: Invalid format of the issue report
+            - Will not fix / known shippable: Maybe a feature
+            - Fixed: The programmer fixed
+            - Verfied Fixed: User verify that the bug is fixed
+            - Duplicate: it's duplicate
+          
+    </details>
+
+
 
 ## Topic 6: Builds
 
