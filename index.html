@@ -49,8 +49,10 @@
     function switchFont() {
       if(document.body.style.fontFamily == "") {
         document.body.style.fontFamily = "'sansforgetica-regular', Helvetica, Arial, sans-serif";
+        document.querySelectorAll("code").forEach(each => each.style.fontFamily = "'sansforgetica-regular', Helvetica, Arial, sans-serif");
       } else {
         document.body.style.fontFamily = "";
+        document.querySelectorAll("code").forEach(each => each.style.fontFamily = "");
       }
     }
 
