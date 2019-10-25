@@ -521,12 +521,82 @@
 ## Topic 6: Builds
 
 - Why is semi/automating the build process important? Where are the complexities in build processes? What risks are involved with manual builds? 
+    <details>
+    <summary>Show answer</summary>
+
+        Build complexity will increase in number of times and steps during the time.
+        Thus, we will need to automate it to reduce chance of errors and fast up the development process.
+
+        The complexities includes:
+        - Generate builds for different operating system, packaging styles.
+        - Generate builds with different platforms features and driver
+        - Select which parts should be rebuild, which part should not.
+
+        Manual build risks:
+        - Increase human errors as the project gets more complex.
+        - Increase manual process in selecting which part to rebuild
+    </details>
 
 - What are the steps in a standard build process? How do build files help us manage dependencies? 
 
-- What is Maven – not details? What are the extra features of Maven over, say, Ant (in general terms)? In particular, how does Maven manage library dependencies and using up-to-date versions? How are lists of dependencies encoded 
+    <details>
+    <summary>Show answer</summary>
 
-  – You do not need to write Maven code but you should know “how it works” at an appropriate (abstract) level 
+        For a standard build process, these are the steps:
+        1. Compile source code
+        2. Copy resources
+        3. Genererate documentation
+        4. Generate version number
+        5. Generate installation program / manifest
+        6. Compress / archieve
+
+        For CI/CD we have:
+        7. Run automated tests
+        8. Upload to distribution server
+        9. Generate source code / bindings.
+
+        With build tools (Apache, Maven, ...), the build file will tell the tool to perform the tasks according to the build file. Build tools like Maven will keep the dependencies up-to-date by
+        going through the local-central-remote repository
+
+    </details>
+
+- What is Maven – not details? What are the extra features of Maven over, say, Ant (in general terms)? In particular, how does Maven manage library dependencies and using up-to-date versions? How are lists of dependencies encoded – You do not need to write Maven code but you should know “how it works” at an appropriate (abstract) level 
+
+    <details>
+    <summary>Show answer</summary>
+
+        Maven is a project mangement and comprehension tool. It provides:
+        1. Automated build tool
+        2. Focused on simplicity on both creation and mangement
+        3. Covers build with
+            - Build management
+            - Testing
+            - Release versioning
+            - Deployment
+
+        Maven will keep the local repository up to date with the remote repository. If it cannot find, it will go online and download it. This is handled in Project Object Modile file (pom.xml).
+
+        Whereas in Ant you have to specify the directory (target).
+
+        Maven is more:
+        - Project oriented
+        - Convention over Configuration (ant)
+        - Dependency management
+        - Extensible through plug-ins
+        - Reuse through centralized repositories.
+
+        Maven lifecycle
+        - Generate source
+        - Compile (mvn compile)
+        - Test-compike
+        - test (mvn test)
+        - Package
+        - Integration-test
+        - Install (mvn install)
+        - Deploy
+        
+        * mvn install will do all the stuff for you (not deploy)
+    </details>
 
 ## Topic 7: Continuous Integration and Delivery 
 
