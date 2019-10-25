@@ -122,7 +122,7 @@ public void testLoginDialogSuccess {
 
     > Release testing has to show that the system is delivered according to its functionality and therefore does not fail during normal use
 
-- Release testing us usually black-box testing process where tests are only derived from system specification.
+- Release testing is usually black-box testing process where tests are only derived from system specification.
 
 ### Release testing and system testing
 
