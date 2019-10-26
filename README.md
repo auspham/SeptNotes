@@ -1,4 +1,5 @@
 <center><img src="README.assets/www.rmit.edu.au"></center>
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 # RMIT Software Engineer Process and Tool Notes
 
@@ -34,3 +35,19 @@ Please make a pull request on the repo [rockmanvnx6/SeptNotes](https://github.co
 
 
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/thedavidvo"><img src="https://avatars3.githubusercontent.com/u/54393813?v=4" width="100px;" alt="David Vo"/><br /><sub><b>David Vo</b></sub></a><br /><a href="https://github.com/rockmanvnx6/SeptNotes/commits?author=thedavidvo" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
