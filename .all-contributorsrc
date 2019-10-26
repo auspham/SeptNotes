@@ -3,7 +3,7 @@
     "README.md"
   ],
   "imageSize": 100,
-  "commit": true,
+  "commit": false,
   "contributorTemplate": "<%= avatarBlock %>",
   "contributors": [
     {
@@ -11,24 +11,37 @@
       "name": "David Vo",
       "avatar_url": "https://avatars3.githubusercontent.com/u/54393813?v=4",
       "profile": "https://github.com/thedavidvo",
+      "contributions": [
+        "doc"
+      ]
     },
     {
       "login": "s3716808",
       "name": "s3716808",
       "avatar_url": "https://avatars1.githubusercontent.com/u/41359268?v=4",
       "profile": "https://github.com/s3716808",
+      "contributions": [
+        "doc"
+      ]
     },
     {
       "login": "yongjiajun",
       "name": "Jia Jun Yong",
       "avatar_url": "https://avatars1.githubusercontent.com/u/1492461?v=4",
       "profile": "http://jjyong.me",
+      "contributions": [
+        "talk",
+        "doc"
+      ]
     },
     {
       "login": "nugyn",
       "name": "Duy Nguyen",
       "avatar_url": "https://avatars1.githubusercontent.com/u/41281749?v=4",
       "profile": "https://github.com/nugyn",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 4,
