@@ -26,7 +26,7 @@ Notes left to complete:
 - [x] Week 9
 - [x] Week 10
 - [x] ~~Week 11 (not examinable)~~
-- [ ] Answer for Week 12
+- [x] Answer for Week 12
 
 ## Contribution
 
