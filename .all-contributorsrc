@@ -31,6 +31,15 @@
       "contributions": [
         "talk"
       ]
+    },
+    {
+      "login": "nugyn",
+      "name": "Duy Nguyen",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/41281749?v=4",
+      "profile": "https://github.com/nugyn",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
