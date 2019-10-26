@@ -61,6 +61,7 @@
 
 ## Observer pattern
 
+> **Motivation:**
 > Need to maintain consistency between related objects without coupling them tightly.
 >
 > E.g: When you want to update multiple views when the data changes.

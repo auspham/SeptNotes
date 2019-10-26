@@ -750,6 +750,7 @@
 
     <details>
     <summary>Show answer</summary>
+
         Some of the commands:
         
         1. Listing:
@@ -766,8 +767,7 @@
 
             b. what container exited
                 docker ps -a -f status=exited
-          
-            
+
         3. Removing:
             a. Container:
                 docker rm <container_id>
@@ -795,17 +795,149 @@
         7. Pull
             or you can manually pull your self:
                 docker pull imagename
-
-
-      
     </details>
+
 ## Topic 9: Design characteristics, patterns, refactoring 
 
 - What are some of the important design characteristics and what do they mean, esp coherence and coupling? What are the implications? You should be able to recognise these properties in specific designs and be able to suggest how to achieve them in designs (to a simple degree). 
+    <details>
+    <summary>Show answer</summary>
+
+        - Coherence: Does the architecture have a logical structure, with elements working together to form a whole?
+        
+        - Cohesion: Are functions related to each other
+
+        - Consistency: Are they consistent
+        
+        - Coupling: How strong the elements are - to what extends does changing one will affect the others.
+
+        - Extensibility: Easy to extend to new functions?
+
+        - Generality: Is the way the program work general as possible
+
+        - Interdependency: what portion of the processing involves interaction between different elements.
+
+        - Seperation of concerns: are internal elements responsible for distinct parts of the system's operation
+
+        - Simplicity
+
+        We want:
+        - Hight extensibility
+        - High reusability
+
+        Can achieve by refactoring following design principles.
+    </details>
+
+
+  
 - What are some of the “design smells”, the blocks to reusability, extensibility, modifiability --- don’t memorise them all but know how to describe them and why they are a problem. 
+    <details>
+    <summary>Show answer</summary>
+
+        Rigidity: Affect modifiability, the system is hard to change, because every changes will lead to more change. (high coupling)
+
+        Fragility: Affect modifiability, the system will break in multiple places.
+
+        Immobilitiy: Affect reusability, the parts could be reuse but too much risks in seperating it.
+
+        Vicosity: Doing things is right is harder than doing things wrong. Affect reusability, hard to reuse method. Development environment is inefficient and slow.
+
+        Needless Complexity: Affect extensibility, reusability. Lots of repeat code.
+
+        Opacity: Affect extensibility, the system is hard to understand.
+    </details>
+
+
 - What are the SOLID principles for? Be prepared to identify why some code violates a SOLID principle and describe a fix. 
+    <details>
+    <summary>Show answer</summary>
+
+        - Single Responsibility Principle (SRP)
+          - Responsibility = what a class does
+          - The more one class does, the more likely it will changes => more likely to introduce bugs.
+        
+        - Open Closed Principle (OCP)
+          - Open for extension but close for modification
+          => Extensible does not result in change of code.
+
+        - Liskov Substitution Principle (LSP)
+          - Sub class should be able to substitute the super class
+
+        - Interface Segregation Principle (ISP)
+          - Client should not be forced to depend on method that they do not use.
+
+        - Dependency Inversion Principle (DIP)
+          - High level modules should not depend on low-level modules. 
+          - That's it, abstractions should not depend on details, details should depends on abstraction.
+    </details>
+
+    
 - What is Refactoring, why is it important/critical in Agile. You do not have to memorise the catalog of Refactoring operations, but you should be able to recognise an opportunity for application of a simple Refactoring operation. 
+    <details>
+    <summary>Show answer</summary>
+
+        Refactor is the process of changing a software system in such way that does not alter external behaviour but improves internal structure.
+
+        Refactoring acts as an important factor in order to increase the extensibility and maintenance of a program.
+
+        Some of the method (actually understand it, see Week9-a)
+        1. Composing method (for better code explaination)
+          - Extract method 
+          - Introduce explaining variable
+          - Split temporary variable
+        
+        2. Moving feartures between objects (other classes use the feature more than the current class)
+          - Move method
+          - Move field
+          - Extract class 
+            (create new class with neccessary methods and fields)
+          - Inline class 
+            (oposite to extract class, where you put everything
+            together, used when a class need not to exist anymore)
+          - Hide delegate
+            (create a middleware to handle communication between
+            client and server)
+
+        3. Dealing with generalisation
+          - Is the process of generalise classes by moving methods and fields up and down.
+          - It may also require creating new classes during the refactoring
+          - Some of the method
+            Pull up / Push down field / Method
+            Extract Subclass/ Superclass / Interface
+    </details>
+
 - What are Design Patterns and what is their benefit? What are the motivations for some of them --- i.e., what problems do they solve? You should be able to provide some design, even some **simple** code to demonstrate understanding (Observer, Factory Method, Facade, Visitor) 
+
+    <details>
+    <summary>Show answer</summary>
+
+        Design pattern is a general, reusable solution to a commonly occuring problem in software designing.
+
+        Benefits:
+        - Support reuse
+        - Communicate successful designs
+        - Narrow design space
+        - Focus on design what have been proven to work
+        - Promote good practice 
+        - leverage and build on best practice and expertise
+
+        Design patterns enables:
+        - Reuse of software architecture. Also help document systems.
+        - Each pattern has expert knowledge and design tradeoffs. Make it more widely available
+        - Help improve developer communication
+        - Form a common vocabulary.
+
+        3 types of patterns:
+          1. Creational:
+             - Factory
+          2. Structural
+             - Facade
+          3. Behavioural
+             - Observer
+             - Visitor
+
+        View Lecture 9b for these type of patterns.
+    </details>
 
 ## Topic 10: NFRs Performance Testing 
 

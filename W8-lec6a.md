@@ -7,7 +7,7 @@
 | Coherence              | Does the architecture have a logical structure, with elements working together to form a whole? |
 | Cohesion               | Are functions related to eachother                           |
 | Consistency            | Are they consistent                                          |
-| Coupling               | How strong elements are                                      |
+| Coupling               | How strong elements are - to what extends does changing one will affect the others.                                     |
 | Extensibility          | Will it be easy to extend to new functions in the feature?   |
 | Functional flexibility | Can it easiliy be changed in term of functionality           |
 | Generality             | Are mechanisms and decisions in the architecture as general as practical |
