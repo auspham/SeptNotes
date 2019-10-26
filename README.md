@@ -34,6 +34,7 @@ Notes left to complete:
 
 Thanks goes to these wonderful people 🔥
 
+<div class="contribute">
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
 <table>
@@ -44,6 +45,7 @@ Thanks goes to these wonderful people 🔥
     <td align="center"><a href="https://github.com/nugyn"><img src="https://avatars1.githubusercontent.com/u/41281749?v=4" width="100px;" alt="Duy Nguyen"/><br /><sub><b>Duy Nguyen</b></sub></a><br /><a href="https://github.com/rockmanvnx6/SeptNotes/commits?author=nugyn" title="Documentation">📖</a></td>
   </tr>
 </table>
+</div>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
