@@ -1,4 +1,4 @@
-# CI/CD - Continuous Integration and Dvelopment
+# CI/CD - Continuous Integration and Development
 
 > **Benefits**:
 >
@@ -20,8 +20,8 @@
 
 - refers to the **process** which all artefacts relevant to your project.
 - Your configuration management strategy will determine how you manage all the changes happen within the project
-- It also **helps to govern the team collaborates**
-- **Version control** is just one of the step
+- It also **helps to govern the team collaboration**
+- **Version control** is just one of the steps
 
 ### Configuration Management Steps
 
@@ -46,9 +46,7 @@ Make sure that all the time, the product is ready to deploy
 
 **Basic Continuous integration system**
 
-1. Check to see if the build is already running. If so, wait for it to finish. If it fails, you’ll
-
-   need to work with the rest of the team to make it green before you check in.
+1. Check to see if the build is already running. If so, wait for it to finish. If it fails, you’ll need to work with the rest of the team to make it green before you check in.
 
 2. Once it has finished and the tests have passed, update the code in your development environment from this version in the version control repository to get any updates.
 
@@ -58,13 +56,13 @@ Make sure that all the time, the product is ready to deploy
 
 5. Wait for your CI tool to run the build with your changes.
 
-6. If it fails, stop what you’re doing and fix the problem immediately on your development machine—go to step 3.
+6. If it fails, stop what you’re doing and fix the problem immediately on your development machine—go back to step 3.
 
 7. If the build passes, rejoice and move on to your next task.
 
 
 
-### Prerequisite for CI
+### Prerequisites for CI
 
 - Check in regularly and frequently
 - Create a comprehensive automated tests
