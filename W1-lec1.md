@@ -176,7 +176,7 @@ All tests must be run for every build and the build is only accepted if tests ru
 
 Is a general agile but focus on managing iterative development rather than specific agile practices.
 
-1. The inial phase is an outline planning phase. Establish general project’s objectives and design software architecture
+1. The initial phase is an outline planning phase. Establish general project’s objectives and design software architecture
 2. Followed by a series of sprint cycles, where each cycle develops an increment of system
 3. Project closure phase wraps up the project, completes required documentation such as system help frames and user manuals and assesses the lessons learned from the project.
 
@@ -198,7 +198,7 @@ The starting point for planning is the product backlog, which is the list of wor
 
 **Benefits**
 
-- Products is broken down to small task => Easier to manage
+- Product is broken down into smaller tasks => Easier to manage
 - Unstable requirements do not hold up progress
 - Customers see on-time delivery
 - Trust between customers and developers is established
