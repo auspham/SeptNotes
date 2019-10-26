@@ -842,7 +842,7 @@
 
         Immobilitiy: Affect reusability, the parts could be reuse but too much risks in seperating it.This means that the system is more prone to making mistakes.
 
-        Vicosity: Doing things is right is harder than doing things wrong. Affect reusability, hard to reuse method. Development environment is inefficient and slow.
+        Viscosity: Doing things is right is harder than doing things wrong. Affect reusability, hard to reuse method. Development environment is inefficient and slow.
 
         Needless Complexity: Affect extensibility, reusability. Lots of repeat and unnecessary code.
 
