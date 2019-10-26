@@ -80,6 +80,7 @@ docker ps -a
 To remove an image, you need to remove the container ID first, and then delete the image using
 
 ```
+docker rm container_id
 docker rmi imagename
 ```
 

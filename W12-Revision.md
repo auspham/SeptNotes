@@ -706,13 +706,99 @@
 ## Topic 8: Deployment via containers / Docker 
 
 - Docker and containerization: what is it for, how is it used? 
+    <details>
+    <summary>Show answer</summary>
 
-- Comparison between Docker containers and standard virtualisation: 
+        Containerisation is the idea of building a specific environment for 1 application. 
 
-  containerisation is more “lightweight” ... why? 
+        Docker is a container platform. Docker makes it easier to create, deploy and run applications using containers.
+
+        It allows the developers to package the applications with all of the dependencies, environment, library that it needs and ship it out as 1 package.
+ 
+    </details>
+
+- Comparison between Docker containers and standard virtualisation: containerisation is more “lightweight” ... why? 
+    <details>
+    <summary>Show answer</summary>
+
+        Traditional VM:
+        - We have
+          - Virtual machine:
+            - Guest Operating system
+            - Application
+          - Hypervisor
+          - Host operating system
+          - Physical server
+
+        In container, we have:
+          - Host operating system
+          - OS kernel
+          - Container:
+            - Application.
+
+        Container shared the same machine as the host operating system.
+        It:
+          - Remove Guest OS, Hypervisor, physical server
+          - Less CPU, RAM, Storage requires
+          => More container per machine than VMS
+          - Greater portability
+          - Easy to manage (since they're sharing the same OS)
+          - Better way to develop and deploy microservices.
+    </details>
 
 - What is the process for creating a Docker container, in the abstract? (You do not have to remember all Docker commands, although you should remember the main operations; knowing the main commands may help to be precise in describing operations.) 
 
+    <details>
+    <summary>Show answer</summary>
+        Some of the commands:
+        
+        1. Listing:
+            a. Container:
+                docker container ls
+                docker container ls -all
+            b. Image:
+                docker image ls
+
+        2. Checking:
+            a. what container is using what Image
+                docker ps -a (for including stopped container)
+                docker ps
+
+            b. what container exited
+                docker ps -a -f status=exited
+          
+            
+        3. Removing:
+            a. Container:
+                docker rm <container_id>
+            b. Image:
+                docker rmi <image_id>
+            
+        4. Run
+            a. Interaction mode
+                docker run -i image
+            b. Detach (background) mode
+                docker run -d image
+            c. Switch to Attach mode (to run in attach just do a normal run)
+                docker attach container_id
+
+        5. Stop
+            a. docker stop <container_id>
+
+        6. Build
+            You need to have the dockerfile
+            1. docker build --tag=tagname
+                When run this command, it will go to the docker registry to pull down the image and create a container.
+            2. docker run -p 4000:80 friendlyhello
+            This will create a container to run the image.
+            It's your_port:container_port
+        7. Pull
+            or you can manually pull your self:
+                docker pull imagename
+
+
+      
+    </details>
 ## Topic 9: Design characteristics, patterns, refactoring 
 
 - What are some of the important design characteristics and what do they mean, esp coherence and coupling? What are the implications? You should be able to recognise these properties in specific designs and be able to suggest how to achieve them in designs (to a simple degree). 
