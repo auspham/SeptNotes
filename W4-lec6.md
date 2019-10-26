@@ -6,7 +6,7 @@
    - Demonstrate that the software meets requirements
    - Discover aspects that has not met the requirement
 2. Can test **prove that we have removed all bugs?**
-   - **NO** - It can **only proves that there are bugs.**
+   - **NO** - It can **only prove that there are bugs.**
    - But it can increases the confidence that software will work as intended.
 
 ### Cost of fixing Errors
@@ -30,7 +30,7 @@ Low to high:
 
 ## Test Planning
 
-- Have to make surre that all aspects of the software are tested.
+- Have to make sure that all aspects of the software are tested.
 - 1 Features - 1 to many test cases, to exercise the feature thoroughly.
 - Must specified into either `pass` or `fail`
   - **Start** from a `known state` / configuration
@@ -76,7 +76,7 @@ What we can do is to make a mock object to <mark>mimic the functionality</mark>
 Examples:
 
 - Test user login methods without using database
-- Test GUI Update functioanlity without using database.
+- Test GUI Update functionality without using database.
 
 [^2]: Refer to [lec5.md](lec5.md#mockobject)
 
@@ -150,7 +150,7 @@ public void testLoginDialogSuccess {
 - Will be based on the features that the system currently has.
 
 - Performance tests usually involve planning a series of tests where the load will be increased gradually until the system performance will be unacceptable.
-- **Stressing test** is a form of performance testing where it tries to stress out the system by overloading toi test it failure behavior.
+- **Stressing test** is a form of performance testing where it tries to stress out the system by overloading to test its failure behavior.
 
 ---
 
@@ -162,14 +162,14 @@ User testing is essential, even when comprehensive unit system and release testi
 
 **Why user testing is essential?**
 
-- Because the user working behaviors has important impact on the reliability of the program’s performance.
+- Because the user's working behaviors have important impact on the reliability of the program’s performance.
 
 ### Types of user testing
 
 | Type               | Definition                                                   |
 | ------------------ | ------------------------------------------------------------ |
 | Alpha testing      | Users work with the development team to test the software at the developer’s site |
-| Beta testing       | A release of  the software is made for user  to experience. User then can raise problems or report bugs if they found any. |
+| Beta testing       | A release of the software is made for users to experience. Users then can raise problems or report bugs if they found any. |
 | Acceptance testing | Customers test a system to decide whether or not it’s ready to be deployed in a customer environment. |
 
 ### Stages in acceptance testing process
@@ -244,8 +244,8 @@ Simplified version:
 | Severity: Effect of failure on the system          | Priority: effect of failure on customer/ user |
 | -------------------------------------------------- | --------------------------------------------- |
 | 1. Loss of data, hardware damage or a safety issue | 1. Complete loss of value                     |
-| 2. Loss of functionality with no work around       | 2. Unacceptable loss of value                 |
-| 3. Loss of functionality with a work around        | 3. Possibly acceptable reduction in value     |
+| 2. Loss of functionality with no workaround       | 2. Unacceptable loss of value                 |
+| 3. Loss of functionality with a workaround        | 3. Possibly acceptable reduction in value     |
 | 4. Partial loss of functionality                   | 4. Acceptable reduction in value              |
 | 5. Cosmetic or trivial                             | 5. Negligible reduction in value              |
 
