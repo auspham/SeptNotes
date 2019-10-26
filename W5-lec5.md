@@ -23,8 +23,8 @@
 
 **Why?**
 
-- Often you’re not creating just one versions:
-  - Might need different build for different operating systems, etc..
+- Often you’re not creating just one version:
+  - Might need different builds for different operating systems, etc..
 - Sometimes these different builds require a different packaging style
   - E.g distributing a JAVA program on OSX or Windows/ Linux
 - Sometimes source code needs to be different
@@ -34,11 +34,11 @@
 
 The whole system might takes hours to recompile. 
 
-Find the **minimum that’s need to be done to rebuild the system** so you don’t have to wait for the whole thing to compile if only compile 1 line.
+Find the **minimum that’s need to be done to rebuild the system** so you don’t have to wait for the whole thing to compile if only compiling 1 line.
 
 ## Apache ants
 
-Build tool for java inside eclipse
+Build tool for Java inside Eclipse
 
 - You wanna avoid typing stuff like
 
@@ -49,7 +49,7 @@ Build tool for java inside eclipse
   java -cp classes:lib/junit-4.0.jar myapp.Main
   ```
 
-  Because this is not incremental build
+  Because this is not incremental build.
 
 - Apache will perform tasks according to the build file `build.xml`
 
@@ -106,9 +106,9 @@ depends="clean,build,test">
 
 ### Apache Ant vs Apache Maven
 
-> **Maven:** will keep the local repository where the library will be. And it **keep the local repository up to date with the remote repository**. If it cannot find, then it will go online to download it.
+> **Maven:** will keep the local repository where the library will be. And it **keeps the local repository up to date with the remote repository**. If it cannot find, then it will go online to download it.
 
-While **ant you have to specify the directory.**
+While **with ant, you will have to specify the directory.**
 
 > Maven is a software project management and comprehension tool
 >
@@ -119,7 +119,7 @@ While **ant you have to specify the directory.**
 > - Covers Build
 >   - Build management
 >   - Testing
->   - Release versionming
+>   - Release versioning
 >   - Deployment
 > - Project oriented
 > - Convention over Configuration
@@ -127,7 +127,7 @@ While **ant you have to specify the directory.**
 > - Extensible through plug-ins
 > - Reuse through centralized repositories
 
-### Project Obriented Builds
+### Project Oriented Builds
 
 Maven models build as **Project Object Model** (POM)
 
