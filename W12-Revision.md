@@ -588,7 +588,7 @@
         Maven lifecycle
         - Generate source
         - Compile (mvn compile)
-        - Test-compike
+        - Test-compile
         - test (mvn test)
         - Package
         - Integration-test
@@ -601,10 +601,107 @@
 ## Topic 7: Continuous Integration and Delivery 
 
 - What is Continuous Integration (CI)? How does it tie in with Agile process? What problems does it solve / what risks does it reduce? 
+    <details>
+    <summary>Show answer</summary>
+
+        CI is the practice that requires developers to integrate code into a shared repository several time a day.
+
+        Solves the common problems when deploy software manually (hiring deployment experts, documentation, time consuming, cost,..)
+
+        Continuous Integration can make sure that all the time, the product is ready to deploy. 
+        It will run through the steps of commands / actions for each increment in order to make sure that the project is reliable.
+
+        CI can keeps he team in sync, removing integration delays.
+        When integrate with Agile, it provides
+        - No gap between operation and development
+        - Automated test means reliable product
+        - Quicker respond to changes without error
+        - Remove the stress of system upgrade.
+    </details>
 - Does CI require an automation framework like Travis or Jenkins? How are Git, Maven, and other tools involved? 
+    <details>
+    <summary>Show answer</summary>
+
+        CI does require automation framework such as Travis and Jenkins. It will follow the steps in the configuration (can specify test, build, ...) after every push.
+
+        Thanks for this, you can setup automatic build and test script, you then can view the result of each build: success / fail.
+    </details>
+
 - How does a CI process integrate with the code repository? What role does the branch-per-feature/Gitflow model play in Continuous Delivery? 
+    <details>
+    <summary>Show answer</summary>
+
+        CI integrate with the code repository through a configuration file (.yaml). 
+        
+        Since CI can test after every push/merge/pull request.
+        It reduces the probability of having errors when merging,creating pull request between different branches.
+
+        We can also set up a continuous delivery using CI by just specifying the steps to deploy the product. 
+        In the end we will have both building, testing, installing,...deploying.
+        Thus, constantly testing and making sure that the project is deployable.
+    </details>
 - What are some of the essentials rules for practicing CI / CD? – e.g., why can you never go home on a broken build? 
+    <details>
+    <summary>Show answer</summary>
+
+        1. Don't check in on a broken build
+        2. Always run all commit tests locally before commitng, or get CI server to do it for you
+        3. Wait for commit tests to pass before moving on
+        4. Always be prepared to reverse to the previous version
+        5. Time-box fixing before reverting
+        6. Don't comment out failing test
+        7. Take responsibility
+        8. Test-driven environent
+ 
+    </details>
 - You will not need to know how to write detailed Travis scripts, but you should know generally what it does and how it works, and generally how it encodes workflow (i.e,. via yaml file) 
+    <details>
+    <summary>Show answer</summary>
+    
+    ```yaml
+    matrix:
+    include:
+    - language: java
+      jdk: oraclejdk8
+      dist: trusty
+      before_install: cd restful-web-services/
+      install: mvn install
+      script: mvn test -B
+
+    - language: node_js
+      node_js:
+        - 10.16.3
+      sudo: required
+      services:
+          - xvfb
+      addons:
+        chrome: stable
+      before_install:
+        # starting a GUI to run tests, per https://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-a-GUI
+        - sudo apt-get install g++ build-essential
+        - "export DISPLAY=:99.0"
+        - "npm config set spin false"
+      before_script:
+        - "cd frontend/app"
+        - "rm -rf node_modules"
+        - sudo apt-get update
+        - sudo apt-get install -y libappindicator1 fonts-liberation
+        - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        - sudo dpkg -i google-chrome*.deb
+        - "yarn install"
+        - "cd .. && cd .. && ls"
+        - "cd restful-web-services"
+        - travis_wait 30 nohup mvn spring-boot:run &
+      script: 
+        - "cd .."
+        - "cd frontend/app"
+        - "npm rebuild node-sass"
+        - "nohup npm start &"
+        - sleep 5
+        - "npm run test"
+        - "npm run wdio"
+    ```
+    </details>
 
 ## Topic 8: Deployment via containers / Docker 
 

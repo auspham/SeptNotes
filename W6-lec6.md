@@ -7,6 +7,7 @@
 > - No gap between operation and developments (for Devops)
 > - Automated test means reliable product
 > - Quicker respond to changes without error
+> - Remove the stress of system upgrade.
 
 ## Principles of software delivery
 
