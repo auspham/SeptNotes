@@ -7,7 +7,7 @@
 **Defect prevention**
 
 - Unit testing
-  - Assertations
+  - Assertions
   - Writing & running unit tests with JUnit
 - Defect removal
   - Logging
@@ -25,7 +25,7 @@ Use debugging tools to test the code, might involve the programmer who wrote the
 
 ### Benefit
 
-- Catches Errors before later development phases
+- Catches errors before later development phases
 - Facilitates refactoring of code at a time later.
 - Builds regression test suite
 - Provides documentation at the test level
@@ -82,7 +82,7 @@ Useful when:
 - Real states of objects too difficult to create
 - Real object is slow
 - Real object returns non-deterministic values
-- Real object does not exists
+- Real object does not exist
 
 Example:
 
@@ -94,7 +94,7 @@ Example:
 
 > Before the code for any new feature is written, all the tests for that feature are written.
 
-At first, all the test will fail, because there’s no code yet. 
+At first, all the tests will fail, because there’s no code yet. 
 
 The developer then writes feature code until all the tests pass. That’s when they must stop writing code for that features.
 
@@ -301,7 +301,7 @@ public class Nose{
         try{
             Wombat.sneeze();
         } catch (Exception ex) {
-            logger.log(Level.WARNING, "trouble sneezing", ex)l
+            logger.log(Level.WARNING, "trouble sneezing", ex);
         }
         logger.fine("done");
     }
