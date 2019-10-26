@@ -1,5 +1,5 @@
 <center><img src="README.assets/www.rmit.edu.au"></center>
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 # RMIT Software Engineer Process and Tool Notes
 
@@ -45,6 +45,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/thedavidvo"><img src="https://avatars3.githubusercontent.com/u/54393813?v=4" width="100px;" alt="David Vo"/><br /><sub><b>David Vo</b></sub></a><br /><a href="https://github.com/rockmanvnx6/SeptNotes/commits?author=thedavidvo" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/s3716808"><img src="https://avatars1.githubusercontent.com/u/41359268?v=4" width="100px;" alt="s3716808"/><br /><sub><b>s3716808</b></sub></a><br /><a href="https://github.com/rockmanvnx6/SeptNotes/commits?author=s3716808" title="Documentation">📖</a></td>
   </tr>
 </table>
 
