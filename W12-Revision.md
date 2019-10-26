@@ -960,80 +960,80 @@
     <details>
     <summary>Show answer</summary>
 	
-	Non functional requirements is an indicator of HOW it performs. This relates to system quality because we are able to 
-	measure the performability of our system. 
-	
-	Things that to consider when specifying non functional requirements include:
-		- Speed 
-		- Size 
-		- Ease of use
-		- Reliability
-		- Robustness 
-		- Portability
+            Non functional requirements is an indicator of HOW it performs. This relates to system quality because we are able to 
+            measure the performability of our system. 
+            
+            Things that to consider when specifying non functional requirements include:
+                - Speed 
+                - Size 
+                - Ease of use
+                - Reliability
+                - Robustness 
+                - Portability
 	
     </details>
 
 
 - Why do we write NFRs? Why is it critical to be specific and precise?? Be prepared to critique and potentially write NFRs for some of the System Qualities (e.g., Performance/Speed, Reliability, Usability) 
 
-<details>
+    <details>
     <summary>Show answer</summary>
-	
-	We write NFR's because it indicates the expected behaviour of our system. When gathering non functional requirements,
-	it is important to be specific and precise because it gives a specific idea of how the system should
-	operate. 
-	
- </details>
+        
+            We write NFR's because it indicates the expected behaviour of our system. When gathering non functional requirements,
+            it is important to be specific and precise because it gives a specific idea of how the system should
+            operate. 
+        
+    </details>
 
 - What is Performance Testing? Why is it critical to success of products? What are the risks of not doing it? What aspects of requirements cover it? 
 
-<details>
+    <details>
     <summary>Show answer</summary>
-	
-	Performance testing is the practice of evaluating our system against the requirements requested from the product 
-	owner. 
-	
-	Performance testing gives a clear indication of how the system performs based on the system implementation. 
-	Other things that performance testing monitors include:
-		- Analysing the behaviour of the system
-		- Identifying bottlenecks
-		- Compare different configurations to determine which configuration would work best
-		- Verifying that the functionality meets the standard 
-	
-	If we don't do performance testing, we would not get an indication on the performance of our system, potentially
-	decreasing the quality of the final product.
-	
- </details>
+        
+            Performance testing is the practice of evaluating our system against the requirements requested from the product 
+            owner. 
+            
+            Performance testing gives a clear indication of how the system performs based on the system implementation. 
+            Other things that performance testing monitors include:
+                - Analysing the behaviour of the system
+                - Identifying bottlenecks
+                - Compare different configurations to determine which configuration would work best
+                - Verifying that the functionality meets the standard 
+            
+            If we don't do performance testing, we would not get an indication on the performance of our system, potentially
+            decreasing the quality of the final product.
+        
+    </details>
 
 - What are the aims of performance testing? What are the different sorts of performance testing? What does each one hope to discover/explore? 
 
-<details>
+    <details>
     <summary>Show answer</summary>
-	
-	First part is same as above.
-	
-	The two types of performance testing are baseline and benchmark. 
-		- Baseline: Compare performance with initial metric data
-		- Benchmark: Comparing performance against industry standards
-	
- </details>
+        
+            First part is same as above.
+            
+            The two types of performance testing are baseline and benchmark. 
+                - Baseline: Compare performance with initial metric data
+                - Benchmark: Comparing performance against industry standards
+        
+    </details>
 
 - What are some of the steps of doing performance testing? Why does the data used need to be carefully designed? What do we risk if we do not vary the data? 
 
-<details>
+    <details>
     <summary>Show answer</summary>
-	
-	1. Identify testing environment
-	2. Perform acceptance criteria
-	3. Plan and design tests
-	4. Execute tests
-	5. Analyse results and report
-	
-	When creating tests they should simulate real life situations because during deployment, the systems would be
-	running in similar conditions. Hence, if we try to simulate tests as close to real-life situations as possible,
-	it would give an accurate indication on how our system would perform.
-	
- </details>
+        
+            1. Identify testing environment
+            2. Perform acceptance criteria
+            3. Plan and design tests
+            4. Execute tests
+            5. Analyse results and report
+            
+            When creating tests they should simulate real life situations because during deployment, the systems would be
+            running in similar conditions. Hence, if we try to simulate tests as close to real-life situations as possible,
+            it would give an accurate indication on how our system would perform.
+        
+    </details>
 
 
 
