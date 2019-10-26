@@ -804,22 +804,24 @@
     <summary>Show answer</summary>
 
         - Coherence: Does the architecture have a logical structure, with elements working together to form a whole?
-        
-        - Cohesion: Are functions related to each other
 
-        - Consistency: Are they consistent
-        
-        - Coupling: How strong the elements are - to what extends does changing one will affect the others.
+    	- Cohesion: Are the elements and components related to each other?
 
-        - Extensibility: Easy to extend to new functions?
+    	- Consistency: Do variable names, functions and responsibilities maintain a consistent order?
 
-        - Generality: Is the way the program work general as possible
+    	- Coupling: Do components and elements relate strongly with each other (Does altering one piece of code affect the other)? We want to try and aim for low coupling.
 
-        - Interdependency: what portion of the processing involves interaction between different elements.
+    	- Extensibility: How easy is it to add new functions without affecting old code?
 
-        - Seperation of concerns: are internal elements responsible for distinct parts of the system's operation
+    	- Flexibility: Can our logical structure be changed without causing any faults
 
-        - Simplicity
+    	- Generality: Are our subcomponents in our logical structure defined generally in our structure?
+
+    	- Interdependency: Which components in our logical structures are needed to communicate with other components?
+
+    	- Seperation of concerns: Are the components in our logical structure distinctly identifiable with each other?
+
+    	- Simplicity: Does the solution to create the logical structure make sense and contains no unnecessary and redundant code?
 
         We want:
         - Hight extensibility
@@ -838,11 +840,11 @@
 
         Fragility: Affect modifiability, the system will break in multiple places.
 
-        Immobilitiy: Affect reusability, the parts could be reuse but too much risks in seperating it.
+        Immobilitiy: Affect reusability, the parts could be reuse but too much risks in seperating it.This means that the system is more prone to making mistakes.
 
         Vicosity: Doing things is right is harder than doing things wrong. Affect reusability, hard to reuse method. Development environment is inefficient and slow.
 
-        Needless Complexity: Affect extensibility, reusability. Lots of repeat code.
+        Needless Complexity: Affect extensibility, reusability. Lots of repeat and unnecessary code.
 
         Opacity: Affect extensibility, the system is hard to understand.
     </details>
@@ -855,6 +857,7 @@
         - Single Responsibility Principle (SRP)
           - Responsibility = what a class does
           - The more one class does, the more likely it will changes => more likely to introduce bugs.
+          => Each component in the system should only have one purpose.
         
         - Open Closed Principle (OCP)
           - Open for extension but close for modification
@@ -862,13 +865,16 @@
 
         - Liskov Substitution Principle (LSP)
           - Sub class should be able to substitute the super class
+          - For example, if we want to make a test and we want to test speed of the "truck", then we should be able to substitute "truck" with "vehicle"
 
         - Interface Segregation Principle (ISP)
           - Client should not be forced to depend on method that they do not use.
+          - For example, we have 2 classes "kid", "adult". We can use the class "Person" as our interface class to store shared functions, variables between "kid", "adult"
 
         - Dependency Inversion Principle (DIP)
           - High level modules should not depend on low-level modules. 
           - That's it, abstractions should not depend on details, details should depends on abstraction.
+          - For example, a super class method dhould not run their subclass methods as they are specific.
     </details>
 
     
@@ -878,7 +884,7 @@
 
         Refactor is the process of changing a software system in such way that does not alter external behaviour but improves internal structure.
 
-        Refactoring acts as an important factor in order to increase the extensibility and maintenance of a program.
+        Refactoring acts as an important factor in order to increase the extensibility and maintenance of a program - thus benefits for Agile
 
         Some of the method (actually understand it, see Week9-a)
         1. Composing method (for better code explaination)
@@ -911,7 +917,7 @@
     <details>
     <summary>Show answer</summary>
 
-        Design pattern is a general, reusable solution to a commonly occuring problem in software designing.
+        Design pattern is a general, reusable solution to a commonly occuring problem in software designing. By following design patterns, it promotes reusability, communicates successful designs, narrow design space which all falls into good coding standards. 
 
         Benefits:
         - Support reuse
@@ -929,12 +935,20 @@
 
         3 types of patterns:
           1. Creational:
-             - Factory
+             - Factory: Factory method defines an interface for creating an object.
           2. Structural
-             - Facade
+             - Facade: A group of subclasses to form a main class. 
+                Example: Food ordering application class would contain classes like...
+                    - RestaurantFinder
+                    - Orders
+                    - UserDatabase
+                    - DeliveryStuff
+                    etc, etc, etc..
           3. Behavioural
-             - Observer
-             - Visitor
+             - Observer:
+               - Used to monitor the same kind of information with the information displayed views or modals.
+             - Visitor: 
+                  - Represents an operation to be performed on the elements of an object structure. Visitors let you define a new operation without changing the classes of elements. 
 
         View Lecture 9b for these type of patterns.
     </details>
