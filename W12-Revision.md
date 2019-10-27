@@ -918,8 +918,6 @@
     <summary>Show answer</summary>
 
         Design pattern is a general, reusable solution to a commonly occuring problem in software designing. 
-        
-        By following design patterns, it promotes reusability, communicates successful designs, narrow design space which all falls into good coding standards. 
 
         Benefits:
         - Support reuse
