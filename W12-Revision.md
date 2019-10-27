@@ -1001,18 +1001,19 @@
     <details>
     <summary>Show answer</summary>
         
-            Performance testing is the practice of evaluating our system against the requirements requested from the product 
-            owner. 
+            Performance testing is to evaluate the system against required performance criteria,
+            comparing between different systems, architectures to find which one performs the best.
+            Performnace testing helps to identify the source of the performance problem
             
-            Performance testing gives a clear indication of how the system performs based on the system implementation. 
-            Other things that performance testing monitors include:
-                - Analysing the behaviour of the system
-                - Identifying bottlenecks
-                - Compare different configurations to determine which configuration would work best
-                - Verifying that the functionality meets the standard 
+            Why performance:
+            1. Compare system against end-user satisfaction
+            2. Verify that the app meets desired performance
+            3. Analyse the behaviour of the app at various load levels
+            4. Identify bottle necks (memory leaks)
+            5. Determiner capacity of app's instructure and future resources if need.
+            6. Compare different configurations to determine which works the best for the app.
             
-            If we don't do performance testing, we would not get an indication on the performance of our system, potentially
-            decreasing the quality of the final product.
+            If we don't do performance testing, we can risks such as speed related risk, scalability risks. 
         
     </details>
 
@@ -1022,10 +1023,24 @@
     <summary>Show answer</summary>
         
             First part is same as above.
-            
-            The two types of performance testing are baseline and benchmark. 
-                - Baseline: Compare performance with initial metric data
-                - Benchmark: Comparing performance against industry standards
+
+            Different type of performance testing
+            - Capacity planning:
+              - Determines current usage and capacity
+            - Component testing
+              - Provide some information tune to the component-level performance
+            - Endurance testing
+              - Detects slow memory leaks / insufficient storage capacity 
+            - Investigative testing
+              - Collects useful information at development stages
+            - Load testing
+              - Determines the throughput at expected loads
+            - Smoke testing
+              - Quick assessment of current performance
+            - Spike testing
+              - Detects memory leaks, disk I/O problems
+            - Stress testing
+              - Determines behaviour at overstressed test
         
     </details>
 
@@ -1040,15 +1055,24 @@
             4. Execute tests
             5. Analyse results and report
             
-            When creating tests they should simulate real life situations because during deployment, the systems would be
-            running in similar conditions. Hence, if we try to simulate tests as close to real-life situations as possible,
-            it would give an accurate indication on how our system would perform.
-        
+            The data for testing has to be as realistic as possible as it has to reflects what actually will happens in deployment.
+            
+            If we do not vary the data, we might experience unrealistic cache effects.
     </details>
 
 
 
 - Why do we use automated tools to do performance testing? Why is it important 
+    <details>
+    <summary>Show answer</summary>
+        
+        Since testing is costly and time consuming over the time, 
+        it's important to do automated testing to reduce time to run repetitive tests.
+
+        With automated testing, we can run on multiple computers with different configurations.
+
+        Reduce manual testing process will increase in tessing accuracy
+    </details>
 
 
 
