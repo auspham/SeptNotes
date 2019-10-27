@@ -1,6 +1,6 @@
 # Refactoring
 
-The process of changing a software system in such a way that <mark>does not alter external behaviour of the code</mark> but improves its internal structure.
+The process of changing a software system in such a way that <mark>does not alter external behaviours of the code</mark> but improves its internal structure.
 
 A discipline to clean up code, a more effective designs.
 
@@ -32,7 +32,7 @@ A discipline to clean up code, a more effective designs.
 
 - Delete commented code
 - Delete Dead functions - never called functions
-- Class with wrong hierarchy (refused bequest)
+- Class with wrong hierarchy (refused request)
 - Duplication code
 - Magic numbers in code
 
@@ -124,7 +124,7 @@ if (PassAsignHurdle && PassExHurdle && PassOverall) {
 
 #### Split Temporary Variable
 
-If a temporary variable is used more than one, make sure you have to rename it each time
+If a temporary variable is used more than once, make sure you have to rename it each time
 
 ❌Instead of:
 
@@ -174,13 +174,13 @@ It requires updating references to the old fields
 
 #### Extract class
 
-When a class has too many methods and data create a new class and move the necessary methods and fields
+When a class has too many methods and data, create a new class and move the necessary methods and fields
 
 - Decide how to split the responsibilities
 - Create a new class with the split-off responsibilities
 - Use Move methods and Fields as necessary
 
-> Classes often grow over time,, often become too complicated
+> Classes often grow over time, often become too complicated
 >
 > A class with many operation and data is not cohesive
 >
@@ -271,7 +271,7 @@ if the behavior on super class is relevant to only some of its subclass, move to
 
 ![1571143957844](W9-lec9.assets/1571143957844.png)
 
-#### Pull down field
+#### Push down field
 
 If the field on super class is only used by some subclass, move it to those.
 
@@ -279,7 +279,7 @@ If the field on super class is only used by some subclass, move it to those.
 
 #### Extract subclass
 
-If a class has features that are used only in some instances create a subclass for the subset of features.
+If a class has features that are used only in some instances, create a subclass for the subset of features.
 
 ![1571144128255](W9-lec9.assets/1571144128255.png)
 
@@ -287,19 +287,19 @@ If a class has features that are used only in some instances create a subclass f
 
 #### Extract superclass
 
-When you have two classes with similar features move the common features to the super class.
+When you have two classes with similar features, move the common features to the super class.
 
 ![1571144239300](W9-lec9.assets/1571144239300.png)
 
 #### Extract interface
 
-When  two or more classes have part of their interface in common or only a subgroup of responsibilities is used by other classes extract the subset into an interface.
+When  two or more classes have part of their interface in common or only a subgroup of responsibilities is used by other classes, extract the subset into an interface.
 
 ![1571144321196](W9-lec9.assets/1571144321196.png)
 
 #### Replace inheritance with delegation
 
-When a subclass uses only part of a superclass interface create a field to refer to the superclass through which its methods can be called (and remove the subclassing)
+When a subclass uses only part of a superclass interface, create a field to refer to the superclass through which its methods can be called (and remove the subclassing)
 
 ![1571144409151](W9-lec9.assets/1571144409151.png)
 
