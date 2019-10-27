@@ -979,9 +979,20 @@
     <details>
     <summary>Show answer</summary>
         
-            We write NFR's because it indicates the expected behaviour of our system. When gathering non functional requirements,
-            it is important to be specific and precise because it gives a specific idea of how the system should
-            operate. 
+            We write Non functional requirements because users might have requirements that
+            does not related to the software functionality such as:
+              - Product requirement
+              - Orginaisational requirement
+              - External requirements.
+
+            Good requirement has to be specific and precise because non-functional requirements
+            are very difficult to verify. 
+
+            Therefore, we need to write statement that can be objectively tested and verified.
+
+            We need to avoid:
+            - Generic requirement
+            - General statement that may unlikely to met accross the system
         
     </details>
 
