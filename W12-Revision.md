@@ -923,7 +923,7 @@
         - Support reuse
         - Communicate successful designs
         - Narrow design space
-        - Focus on design what have been proven to work
+        - Focus on architecture issues what have been proven to work
         - Promote good practice 
         - leverage and build on best practice and expertise
 
