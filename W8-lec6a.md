@@ -5,7 +5,7 @@
 | Characteristic         | Definition                                                   |
 | ---------------------- | ------------------------------------------------------------ |
 | Coherence              | Does the architecture have a logical structure, with elements working together to form a whole? |
-| Cohesion               | Are functions related to eachother                           |
+| Cohesion               | Are functions related to each other                           |
 | Consistency            | Are they consistent                                          |
 | Coupling               | How strong elements are - to what extends does changing one will affect the others.                                     |
 | Extensibility          | Will it be easy to extend to new functions in the feature?   |
@@ -13,18 +13,18 @@
 | Generality             | Are mechanisms and decisions in the architecture as general as practical |
 | Interdependency        | What portion of processing steps involves interactions between elements, as opposed to within an element |
 | Seperation of concerns | Are internal elements responsible for distinct parts of system’s operation? |
-| Simplicity             | Is the solution the simplist one?s                           |
+| Simplicity             | Is the solution the simplest one?                           |
 
 ### Symptoms of poor design
 
 | Symptom             | Definition                                                   |
 | ------------------- | ------------------------------------------------------------ |
-| Rigidity            | The system is hard to change because every change forces more change |
-| Fragility           | The system may break in multiple places due to change in one place |
+| Rigidity            | The system is hard to change because every change forces more changes |
+| Fragility           | The system may break in multiple places due to a change in one place |
 | Immobility          | Parts could be useful in other system but effort risk to seperate from original system is too much |
 | Vicosity            | Doing things right is harder than doing things wrong         |
 | Needless Complexity | Some elements are not useful                                 |
-| Needless repition   | A lot of repeat code                                         |
+| Needless repition   | A lot of repeating code                                      |
 | Opacity             | The system is hard to read and understand                    |
 
  ## Desirable Design characteristic
@@ -94,7 +94,7 @@ public class Square extends Rectangle {
 
 ####  Interface Segregation Principle (ISP)
 
-Clients should not be forced to depend on method that they do not use
+Clients should not be forced to depend on methods that they do not use
 
 - Split into multiple modules / classes OR define specific interfaces for specific puirposes that the clients implement
 
