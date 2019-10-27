@@ -194,6 +194,17 @@ Refer to lecture slide 30.
 - Expect a given exceptions:
 
   `@Test(expected=<Exception>)`
+  
+  For example:
+  ```java
+  @Test(expected = IndexOutOfBoundsException.class)
+  public void testIndexOutOfBoundsException() {
+
+      ArrayList emptyList = new ArrayList();
+      Object o = emptyList.get(0);
+
+  }
+  ```
 
 - Test timeout
 
