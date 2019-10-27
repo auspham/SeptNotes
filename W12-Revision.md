@@ -982,7 +982,7 @@
             We write Non functional requirements because users might have requirements that
             does not related to the software functionality such as:
               - Product requirement
-              - Orginaisational requirement
+              - Organisational requirement
               - External requirements.
 
             Good requirement has to be specific and precise because non-functional requirements
