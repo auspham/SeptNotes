@@ -1004,6 +1004,10 @@
             Performance testing is to evaluate the system against required performance criteria,
             comparing between different systems, architectures to find which one performs the best.
             Performnace testing helps to identify the source of the performance problem
+
+            Using performance test we can find the throughput levels
+            - Baselines: compare the performance improvements against initial performance metric data
+            - Benchmarks: comparing your system against industry standards.
             
             Why performance:
             1. Compare system against end-user satisfaction
