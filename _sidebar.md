@@ -18,3 +18,7 @@
 
 - Revision / Summary
     - [Week12-a](W12-Revision.md)
+
+- Misc
+    - [Misc](misc.md)
+
