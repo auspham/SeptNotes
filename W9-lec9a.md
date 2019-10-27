@@ -74,7 +74,7 @@ To deal with problems such as **long methods and temporary variables which makes
 
 Instead of commenting, makes a method that do it with a proper name:
 
-Instead of this:
+❌Instead of this:
 
 ```java
 ...
@@ -83,7 +83,7 @@ Instead of this:
 ...
 ```
 
-Do this:
+✅Do this:
 
 ```java
 void printInfo() {
@@ -102,7 +102,7 @@ void printInfo() {
 
 Breaking a complicated expression into parts that explain the meaning
 
-Instead of this:
+❌Instead of this:
 
 ```java
 if (a1 > a2 && exam > examin && overall >= overallmin) {
@@ -110,7 +110,7 @@ if (a1 > a2 && exam > examin && overall >= overallmin) {
 }
 ```
 
-Do this:
+✅Do this:
 
 ```java
 final boolean PassAssignHurdle = a1 > a2;
@@ -126,7 +126,7 @@ if (PassAsignHurdle && PassExHurdle && PassOverall) {
 
 If a temporary variable is used more than one, make sure you have to rename it each time
 
-Instead of:
+❌Instead of:
 
 ```java
 double myScore = 12 * 40;
@@ -136,7 +136,7 @@ myScore = 14 * 2;
 System.out.println(myScore);
 ```
 
-Do this:
+✅Do this:
 
 ```java
 double myscore = ...;
@@ -218,9 +218,13 @@ Useful when you are not allowed to change the server class (such as Date) to add
 
 Such service can be hard coded in the client but if such a service is used repetitively, it can be added to the client.
 
+❌Instead of ...
 ```java
 Date newStart = new Date(previousEnd.getYear(), previousEnd.getMonth(), previousEnd.getDate() + 1);
+```
 
+✅Try...
+```java
 Date newStart = nextDay(previousEnd);
 private static Date nextDay(Date arg) {
     return new Date(arg.getYear(), arg.getMonth(), arg.getDate() + 1);
