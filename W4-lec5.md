@@ -250,8 +250,8 @@ public void testLoginDialogSuccess {
     dlg.submit();
     
     assertTrue(dlg.isAuthorized());
-    assertEqual("bob", mock.requestedUsername);
-    assertEqual("pwd", mock.requestedPassword);
+    assertEquals("bob", mock.requestedUsername);
+    assertEquals("pwd", mock.requestedPassword);
 }
 ```
 
