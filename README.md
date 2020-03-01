@@ -11,13 +11,12 @@
 ## Features
 1. Search
 2. Quick Notes `Note icon`- with formatting
-3. [RSVP](https://en.wikipedia.org/wiki/Rapid_serial_visual_presentation) read `Glass Icon` (fast reading) - the feature is experimenting, sometimes does not work well.
-4. [Sans Forgetica](https://sansforgetica.rmit/) read `Font Icon` (for better remembering)
-5. Offline mode - experimenting
-6. Responsiveness on any devices.
+3. [Sans Forgetica](https://sansforgetica.rmit/) read `Font Icon` (for better remembering)
+4. Offline mode - experimenting
+5. Responsiveness on any devices.
    
 ## How to use it correctly?
-1. Skim through the notes first with either RSVP or normal reading. - Sometimes it's easier to just read normally because of the formatting.
+1. Skim through the notes first.
 2. For better remembering, use Sans Forgetica by hovering to the note and select the `Font Icon`
 3. After remembered, click on the Note Icon to type what you remembered. If you can type the note without looking, then you have mostly remembered it :-). 
 4. Remember to self-test the previous reading sometimes.
