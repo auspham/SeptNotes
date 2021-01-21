@@ -11,7 +11,7 @@
 ## Features
 1. Search
 2. Quick Notes `Note icon`- with formatting
-3. [Sans Forgetica](https://sansforgetica.rmit/) read `Font Icon` (for better remembering)
+3. [Sans Forgetica](https://sansforgetica.rmit.edu.au/) read `Font Icon` (for better remembering)
 4. Offline mode - experimenting
 5. Responsiveness on any devices.
    
